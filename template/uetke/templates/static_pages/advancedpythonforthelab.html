@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Advanced Python for the Lab: The ultimate course for scientists{% endblock %}
+{% block description %}Uetke offers courses for your lab. You can develop all the skills you need to program and control your own experiment.{% endblock %}
+{% block keywords %}Courses, Advanced, Professional{% endblock %}
+
+{% block content %}
+  <!-- Cover -->
+  <div class="pt-5 bg-primary big-header" id="pythonlab-header">
+    <div class="container mb-2 pb-5">
+      <div class="row my-4 pb-5">
+        <div class="col-md-12 my-5 text-center align-self-center">
+          <h1 class="text-dark display-1 main-title">Advanced Python for the Lab</h1>
+          <h1 class="text-dark sub-title">Expand your toolbox and develop better software</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Article style section -->
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <p class="lead">Once you already know the basics about communicating with your devices and building GUI's you will want to reach new levels</p>
+          <p class="">This course is aimed at groups of people working together. No individual projects, each participant will focus on a different task and everything will come up together at the end.&nbsp;</p>
+          <p class="">Because of the nature of the course, it is available only for groups of up to 5 people who are willing to work as a team.&nbsp;</p>
+        </div>
+        <dic class="col-md-4 col-lg-6 d-none d-md-block" style="background-image: url('{{ SITEURL }}/theme/img/python_for_the_lab_side.jpg');background-position:center center;background-size:cover;"></dic>
+      </div>
+      <hr class="mt-0"> </div>
+  </div>
+  <!-- Features -->
+  <div class="py-5" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="pb-4 text-left">Syllabus</h1>
+          <p class="lead text-left">Advanced Python for the Lab has a flexible syllabus, depending on the interests of the participants. However, we have developed what we believe is a good balance between the different components of a complex computer program.&nbsp;</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="">Sophisticated experiments need a complex array of technologies in order to be successful. During the three days of this course, we are going to cover several of those topics.&nbsp;</p>
+          <p class="">Sophisticated devices such as cameras and high-resolution acquisition cards need to be handled in a different way than message based devices. Learn how to interact with National Instruments DAQ cards, how to acquire images from a camera and
+            communicate through a network. Don't be limited to devices that connect directly to the same computer.&nbsp;</p>
+          <p class="">During the course, you will increase the toolbox of resources you have for making better Python code, learn how to build meaningful documentation and deploy it on <i>Read The Docs</i>. Learn how to debug and optimize your code. Best practices
+            are at hand. Build graphical interfaces that have a better design and a more fluid interaction with the user.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a class="btn btn-success active btn-block" href="{{ SITEURL }}/courses/register">Sign Up &amp; Conditions </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h3>Next courses</h3>
+          <p class="my-3">Advanced Python for the Lab is currently offered only on request. The nature of the course doesn't make it possible to have heterogeneous groups.&nbsp;
+            <br> </p>
+          <p class="">If you are interested in the course but can't gather a group of 5 people contact us through the form below and we will see what we can work out together.</p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Features -->
+{% include "courses_offer.html" %}
+{% endblock %}

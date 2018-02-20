@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57311806-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-57311806-7');
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="{{ SITEURL }}/theme/img/Logo_Only_U.jpg">
+  <title>{{ SITENAME }} | {% block title %}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{% endblock %}">
+  <meta name="keywords" content="Python, Software, Science, Research, User Interface, GUI, {% block keywords %}{% endblock %}">
+  <!-- Open Graph Descriptions -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.uetke.com/"/>
+  <meta property="og:title" content="Software For Science" />
+  <meta property="og:description" content="Uetke specializes in developing software for scientific research. We also offer trainings and coaching." />
+  {% block meta_content %}{% endblock %}
+  <!-- CSS dependencies -->
+  <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/fontawesome.min.css" type="text/css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/uetke.css">
+  <!-- FEEDS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for Uetke.com" href="/feed.rss" />
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed for Uetke.com" href="/atom.xml" />
+
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>
+  <!-- Script: Animated entrance -->
+  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>
+  <!-- Font Awesome Javascript -->
+  <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-left",
+  "content": {
+    "href": "https://www.uetke.com/privacy/"
+  }
+})});
+</script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-ontop bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="{{ SITEURL }}/theme/img/Uetke_Logo.png" width="" height="" class="d-inline-block align-top" alt=""> </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="btn btn-light" href="{{ SITEURL }}/courses">Courses</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-light" href="{{ SITEURL }}/blog">Blog</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-light" href="{{ SITEURL }}/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% block content %}{% endblock %}
+  <!-- Contact Us -->
+  <div class="py-5 section-primary" id="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 animate-in-left">
+          <form class="" method="POST" action="https://formspree.io/sales@uetke.com">
+            <h1 class=""><i class="fa fa-user fa-fw"></i>Contact Us</h1>
+            <div class="form-group">
+              <label for="inlineName">Name:</label>
+              <input type="text" class="form-control" id="inlineName" placeholder="Your Name" name="name" required="required"> </div>
+            <div class="form-group">
+              <label for="inlineEmail">E-mail:</label>
+              <input type="text" class="form-control" id="inlineEmail" placeholder="Your E-mail" name="_replyto" required="required">
+            </div>
+            <div class="form-group">
+              <label for="inlineMessage">Message:</label>
+              <textarea class="form-control" id="inlineMessage" rows="3" name="message" data-error="Please,leave us a message." required="required"></textarea>
+            </div>
+            <button type="submit" class="btn my-3 btn-secondary">Contact Us</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="py-5 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">Sign up to our newsletter for the latest news</p>
+          <form action="https://uetke.us17.list-manage.com/subscribe/post?u=57a7ac8cbc79b7548db42490e&amp;id=6fde4af646" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
+            <div class="form-group mc-field-group">
+	          <input type="email" placeholder="Enter your Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_57a7ac8cbc79b7548db42490e_6fde4af646" tabindex="-1" value=""></div>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"  class="btn ml-2 btn-secondary">&nbsp;</button>
+          </form>
+          <p class="">Keep up to date with the news. No spam, promise.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 my-3 text-center">
+          <p class="text-muted">© Copyright 2018 Uetke | <a href="{{ SITEURL }}/privacy">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="{{ SITEURL }}/theme/js/smooth-scroll.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+<script id="dsq-count-scr" src="//uetke.disqus.com/count.js" async></script>
+</body>
+
+</html>

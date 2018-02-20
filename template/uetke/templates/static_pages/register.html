@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Courses: Develop Software for the Lab{% endblock %}
+{% block description %}Uetke offers courses for your lab. You can develop all the skills you need to program and control your own experiment.{% endblock %}
+{% block keywords %}Courses{% endblock %}
+
+{% block content %}
+<div class="py-5 text-center bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-light">Register to a course</h1>
+              <p class="text-light">Fill in the form below to register.&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">General conditions:</p>
+          <p class="">In order to register for a course, we will ask you for a pre-payment of half the price of the course. The pre-payment is reimbursable only up to two weeks before the start date of the selected course.&nbsp;
+            <br> </p>
+          <p class="">You will receive all the information for the payments after filling up the form.&nbsp;</p>
+          <p class="">Each course includes materials such as the electronic copy of the slides used and hard copies of the notes.&nbsp;</p>
+        </div>
+        <div class="col-md-6"><a name="form">&nbsp;</a>
+          <form class="" action="https://formspree.io/courses@uetke.com" method="POST">
+            <div class="form-group"> <label for="InputName">Your name:</label>
+              <input type="text" class="form-control" placeholder="Enter Your Name" name="name" id="InputName"> </div>
+            <div class="form-group"> <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto"> </div>
+            <div class="form-group"> <label for="sel1">Select Course:</label>
+                <select class="form-control" id="sel1" name="course">
+                 <option>Python for the Lab</option>
+                 <option>Advanced Python for the Lab</option>
+                 <option>Git for Scientists</option>
+               </select> </div>
+            <div class="form-group">
+                <label for="comment">Remarks:</label>
+                <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <input type="hidden" name="_next" value="{{ SITEURL }}/courses/register/thanks#form"> </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

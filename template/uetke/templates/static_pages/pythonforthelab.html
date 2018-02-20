@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}Python for the Lab: The definitive course for scientists{% endblock %}
+{% block description %}Python for the Lab is the ultimate course for scientists who want to gain control over their experiment{% endblock %}
+{% block keywords %}User Interface, GUI, courses{% endblock %}
+
+{% block content %}
+  <!-- Cover -->
+  <div class="pt-5 bg-primary big-header" id="pythonlab-header">
+    <div class="mb-2 pb-5 container">
+      <div class="row my-4 pb-5">
+        <div class="col-md-12 my-5 text-center align-self-center">
+          <h1 class="display-1 text-dark main-title">Python for the Lab</h1>
+          <h1 class="text-dark sub-title">The definitive introduction course for scientists</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Article style section -->
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <p class="lead">The aim of the course is to show that anybody can build software for the lab. Our intensive 3-day course covers from the basics of communicating with a device to building user interfaces.&nbsp;</p>
+          <p class="">Developing control software for labs with Python is becoming ubiquitous in all major research institutes around the world. Learn from real-world cases, with real devices and measurements. The courses are aimed at small groups of 5 people in
+            order to deliver personalized content to every attendant.&nbsp;</p>
+          <p class="">Do you want to have a course according to the specific needs of your lab? We can work something out together, drop us a line: courses@uetke.com</p>
+        </div>
+        <dic class="col-md-4 col-lg-6 d-none d-md-block" style="background-image: url('{{ SITEURL }}/theme/img/python_for_the_lab_side.jpg');background-position:center center;background-size:cover;"></dic>
+      </div>
+      <hr class="mt-0"> </div>
+  </div>
+  <!-- Features -->
+  <div class="py-5" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="pb-4 text-left">Detailed Syllabus</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="">
+            <li>Day 0 (To be done at home): &nbsp;
+              <br>You will receive detailed instructions on how to set up a development environment on your own computer. You will set up a virtual environment and install the needed libraries for the project. You will also receive instructions to set up a GitHub account, which we are going to use during the course.</li>
+            <li>Day 1:
+              <ul>
+                <li>Introduction to the tools we are going to use and to class dynamics</li>
+                <li> We are going to make intensive use of GitHub to review each other’s code</li>
+                <li>Quick overview of basic Python syntax and the command line to be sure everyone is on the same page</li>
+                <li>Set up an easy experiment with a LED Build the first driver for a real device</li>
+                <li>Acquire an I-V curve and plot the results</li>
+              </ul>
+            </li>
+            <li>Day 2:
+              <ul>
+                <li>Learn about the MVC design pattern</li>
+                <li>Implement a Model for your driver</li>
+                <li>Implement a dummy model for testing</li>
+                <li>Develop a Model for your experiment</li>
+                <li>Improve the layout of your code for better packaging</li>
+                <li>Basics of GUI developing with PyQt</li>
+              </ul>
+            </li>
+            <li>Day 3:
+              <ul>
+                <li>Trigger a measurement from the GUI</li>
+                <li>Learn how to work with Threads in Qt</li>
+                <li>Use PyQtGraph to plot the results</li>
+                <li>Change the parameters of the scan and validate them</li>
+                <li>Save the data</li>
+                <li>Create a monitor for a signal</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a class="btn btn-success active btn-block" href="{{ SITEURL }}/courses/register">Sign Up &amp; Conditions </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="">Is this course for me?</h1>
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <p class="lead">What do you need to know before the course:</p>
+          <ul class="" id="need">
+            <li class="list-group-item"><span class="fa needspan fa-check-square"></span>Basics of programming (for loop, while loop, etc.)</li>
+            <li class="list-group-item"><span class="fa needspan fa-check-square"></span>Working with the command line</li>
+            <li class="list-group-item"><span class="fa needspan fa-check-square"></span>How measurements work</li>
+            <li class="list-group-item"><span class="fa needspan fa-check-square"></span>Ohm's law</li>
+          </ul>
+          <p class="">More importantly, you have to be motivated to learn new computer skills.</p>
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <p class="lead">What you don't need to know before the course:</p>
+          <ul class="" id="notneed">
+            <li class="list-group-item"><span class="fa notneedspan fa-times"></span>High level of Python</li>
+            <li class="list-group-item"><span class="fa notneedspan fa-times"></span>Electronics</li>
+            <li class="list-group-item"><span class="fa notneedspan fa-times"></span>UI Design</li>
+          </ul>
+          <p class="">You don't need to have high programming skills, but you should be familiar with ideas such as loops and functions</p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <h3>Next courses</h3>
+          <p class="my-3 lead">There are no courses planned at the moment.</p>
+          <p class="">If you are interested in a course, drop us an e-mail to <a href="mailto:courses@uetke.com">courses@uetke.com</a> or fill the form below. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Location -->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-cs-12">
+          <img class="d-block img-fluid float-left rounded" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyByJ-myQrLo6jY5sDtMWYE3ejAhzC64I4s&amp;markers=Meet+Berlage&amp;center=Meet+Berlage&amp;zoom=15&amp;size=640x480&amp;sensor=false"> </div>
+        <div class="col-md-4 col-xs-12">
+          <h1 class="">Our Location</h1>
+          <p class="lead">Our courses are given at <b style="font-weight: bold;">Meet Berlage</b>, a great location just 5 minutes away from Amsterdam Centraal</p>
+          <p class="">Do you prefer a course at your own location? Drop us a line at courses@uetke.com or through the form below.
+            <br> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% include "courses_offer.html" %}
+{% endblock %}

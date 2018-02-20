@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Git for Scientists: Learn the best tool for organizing your work{% endblock %}
+{% block description %}Learn how Git can help you get more organized with your work. Learn all the ins and outs of the best version control system and how it can help you in your daily tasks.{% endblock %}
+{% block keywords %}Courses, Git, Github, Gitlab, Bitbucket{% endblock %}
+
+{% block content %}
+  <!-- Cover -->
+  <div class="pt-5 bg-primary big-header" id="pythonlab-header">
+    <div class="container mb-2 pb-5">
+      <div class="row my-4 pb-5">
+        <div class="col-md-12 my-5 text-center align-self-center">
+          <h1 class="text-dark display-1 main-title">Git for scientists</h1>
+          <h1 class="text-dark sub-title">Track changes, work in teams, don't lose data</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Article style section -->
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <p class="lead">There are many tools from which scientists can benefit. Git is perhaps the most useful one that gets too often overlooked.</p>
+          <p class="">This course is aimed at groups of 10 people who are willing to learn how to achieve a proper workflow and how to collaborate.</p>
+          <p class="">Git is useful not only for developing programs but to work in teams. Learn from real-world examples.</p>
+        </div>
+        <dic class="col-md-4 col-lg-6 d-none d-md-block" style="background-image: url('{{ SITEURL }}/theme/img/python_for_the_lab_side.jpg');background-position:center center;background-size:cover;"></dic>
+      </div>
+      <hr class="mt-0"> </div>
+  </div>
+  <!-- Features -->
+  <div class="py-5" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="pb-4 text-left">Syllabus</h1>
+          <p class="lead text-left">Git for scientists will teach you how to exploit a tool that will help you collaborate, track your changes and document your code.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="">The open source community has quickly shifted to Github to host their projects. The same technology that powers collaborations among big, decentralized teams can be powering also your research organization.</p>
+          <p class="" contenteditable="true">What you are going to learn:</p>
+          <ul>
+            <li>Start your own Git project</li>
+            <li>Configure remotes</li>
+            <li>Use different sources: Gitlab, Bitbucket, Github</li>
+            <li>Pull, Push, Merge</li>
+            <li>Work with branches</li>
+            <li>Setup a team project</li>
+            <li>Pull requests</li>
+            <li>Using issues to document changes</li>
+            <li>Better document your code</li>
+            <li>Document Python code with Read The Docs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a class="btn btn-success active btn-block" href="{{ SITEURL }}/courses/register">Sign Up &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h3>Next courses</h3>
+          <p class="my-3 lead">There are no courses planned at the moment.</p>
+          <p class="">If you are interested in a course, drop us an e-mail to <a href="mailto:courses@uetke.com">courses@uetke.com</a> or fill the form below. </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </div>
+ <!-- Location -->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-cs-12">
+          <img class="d-block img-fluid float-left rounded" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyByJ-myQrLo6jY5sDtMWYE3ejAhzC64I4s&amp;markers=Meet+Berlage&amp;center=Meet+Berlage&amp;zoom=15&amp;size=640x480&amp;sensor=false"> </div>
+        <div class="col-md-4 col-xs-12">
+          <h1 class="">Our Location</h1>
+          <p class="lead">Our courses are given at <b style="font-weight: bold;">Meet Berlage</b>, a great location just 5 minutes away from Amsterdam Centraal</p>
+          <p class="">Do you prefer a course at your own location? Drop us a line at courses@uetke.com or through the form below.
+            <br> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% include "courses_offer.html" %}
+{% endblock %}

@@ -1,0 +1,262 @@
+.big-header {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title{
+    font-size: 2.9rem;
+}
+.sub-title{
+    font-size: 1.9rem;
+}
+
+.article-main-title, .page-main-title{
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.article-sub-title, .page-sub-title {
+        font-size: 1.2rem;
+        background-color: rgba(255, 255, 255, 0.35);
+    }
+
+@media screen and (min-device-width: 450px){
+  .main-title, .article-main-title, .page-main-title
+  {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  .sub-title, .article-sub-title, .page-sub-title
+  {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+}
+@media screen and (min-device-width: 650px) {
+    .main-title, .article-main-title, .page-main-title {
+        font-size: 3.5rem;
+    }
+    .sub-title, .article-sub-title, .page-sub-title{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-device-width: 961px) {
+    .main-title, .article-main-title, .page-main-title {
+        font-size: 4rem;
+    }
+    .sub-title, .article-sub-title, .page-sub-title{
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-device-width : 412px)
+{
+  .h5
+  {
+    font-size: 1rem;
+  }
+  .lead
+  {
+    font-size: 0.9rem;
+  }
+  hr
+  {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .card-block h1
+  {
+    font-size: 2rem;
+  }
+
+}
+
+
+#pythonlab-header{
+  background-image: url('/theme/img/python_for_the_lab_sm.jpg');
+  background-position: bottom center;
+}
+
+#courses-header{
+  background-image: url('/theme/img/courses_header_sm.jpg');
+}
+
+#main-header{
+    background-image: url('/theme/img/index_header_sm.jpg');
+}
+
+@media screen and (min-width: 412px){
+    #courses-header{
+        background-image: url('/theme/img/courses_header_md.jpg');
+    }
+    #main-header{
+        background-image: url('/theme/img/index_header_md.jpg');
+    }
+
+}
+
+@media screen and (min-width: 701px){
+    #courses-header{
+        background-image: url('/theme/img/courses_header_lg.jpg');
+    }
+    #pythonlab-header{
+        background-image: url('/theme/img/python_for_the_lab_header.jpg');
+    }
+    #main-header{
+        background-image: url('/theme/img/index_header_lg.jpg');
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #main-header{
+        background-image: url('/theme/img/index_header_xl.jpg');
+    }
+}
+
+#contact-us{
+  background-image: url('/theme/img/action.jpg');"
+}
+
+.exercise {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 1.25rem;
+	background-color: #70A0D0;
+	margin: 10px;
+}
+
+.exercise .title {
+	font-size: large;
+	font-weight: bold;
+}
+
+.exercise img{
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.warning{
+  box-shadow: 0 4px 8px 0 rgba(255, 59, 0, 0.25), 0 6px 20px 0 rgba(255, 59, 0, 0.2);
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.warning .admonition-title{
+  color: tomato;
+  position: relative;
+}
+
+.warning .admonition-title:before {
+    content: "\f071";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left:-15px;
+    position:absolute;
+    top:0;
+ }
+
+.note{
+  box-shadow: 0 4px 8px 0 rgba(100, 149, 237, 0.25), 0 6px 20px 0 rgba(100, 149, 237, 0.2);
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.note .admonition-title{
+  color: cornflowerblue;
+  position: relative;
+}
+
+.note .admonition-title:before {
+    content: "\f129";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left:-10px;
+    position:absolute;
+    top:0;
+ }
+
+.highlight{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 0.5rem;
+}
+
+.highlighttable .highlight{
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: none;
+}
+
+.highlighttable .linenos{
+    background-color: rgba(245,217,149,0.3);
+    padding: 0.5rem;
+}
+
+.highlighttable{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.literal {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+    background-color: #eff0f1;
+}
+
+.entry-content img{
+    width: 100%;
+    height: auto;
+}
+
+#content img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 550px){
+    .entry-content img {
+        width: 75%;
+        height: auto;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+    #content img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.latest-articles p{
+    font-size: 0.95rem;
+    color: #0b0b0b;
+    padding-bottom: 0rem;
+    margin-bottom: 0.1rem;
+    font-weight: bold;
+}
+
+.latest-articles ul{
+    list-style: none;
+    font-size: 0.95rem;
+    padding-left: 0px;
+}
+
+.latest-articles li, .latest-articles a{
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+    color: #0b0b0b;
+}
+
+.latest-articles{
+    border-left: 1px rgba(0, 0, 0, 0.34) solid;
+}

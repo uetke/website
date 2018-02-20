@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}Courses: Develop Software for the Lab{% endblock %}
+{% block description %}Uetke offers courses for your lab. You can develop all the skills you need to program and control your own experiment.{% endblock %}
+{% block keywords %}Courses{% endblock %}
+
+{% block content %}
+<!-- Cover -->
+<div class="pt-5 bg-primary big-header" id="courses-header">
+    <div class="container mb-3 pb-3">
+      <div class="row">
+        <div class="col-md-12 my-5 text-center align-self-center">
+          <h1 class="display-1 main-title">Courses</h1>
+          <h1 class="sub-title">The best tools for scientific software development</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Article style section -->
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <p class="lead">The aim of the courses is to show that anybody can build software for the lab. Our intensive 3-day courses cover the basics of working with Python to distributing packages with built-in documentation.&nbsp; </p>
+          <p class="">Developing control software for labs with Python is becoming ubiquitous in all major research institutes around the world. Learn from real-world cases, with real devices and measurements. The courses are aimed at small groups of 5 people in order
+            to deliver personalized content to every attendant.&nbsp;</p>
+          <p class="">Do you want to have a personalized course according to the specific needs of your lab? We can work something out together, drop us a line: courses@uetke.com</p>
+        </div>
+        <div class="col-lg-6 d-none d-md-block col-md-4" style="background-image: url('{{ SITEURL }}/theme/img/apple-desk-laptop-working_2.jpg');background-size:cover;background-repeat:no-repeat;background-position:right center;"></div>
+      </div>
+      <hr class="mt-0"> </div>
+  </div>
+  <!-- Offer -->
+  <div class="py-md-3" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="pb-4 text-left">Our Courses</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h5 class="">Our courses are ideal for young Ph.D. candidates and postdocs who want to gain control of their own experiments.&nbsp;</h5>
+              <p class="lead text-left">The courses are aimed at participants who are comfortable analyzing data with Python or Matlab. If you already know how to open and read files, how to iterate over an array and write an if-statement, then you are ready to join. The course
+                is hands-on from the first moment; you will receive a real device on the first day and by the end of the third day you will have an amazing user interface for interacting with it. While the course progresses you can keep the device to
+                practice at home or in the office.</p>
+              <h6 class="">Important: You should bring your own laptop to the course.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-light p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card m-1 p-2">
+            <div class="card-block">
+              <p class="lead"><i>Advanced Python for the Lab</i></p>
+            </div>
+            <div class="card-block my-0">
+              <h1><b>€750</b></h1>
+              <p class="">3 days</p>
+              <hr>
+              <p>Group of 5 people</p>
+              <hr>
+              <p>Personalized</p>
+              <hr>
+              <p>Advanced topics</p>
+              <hr>
+              <p>Complex devices</p>
+            </div>
+            <div class="card-block">
+              <a href="{{ SITEURL }}/courses/advanced" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-primary m-1 text-white p-2">
+            <div class="card-block">
+              <p class="lead"><i>Introduction Python for the Lab</i></p>
+            </div>
+            <div class="card-block my-0">
+              <h1><b>€550</b></h1>
+              <p class="">3 days</p>
+              <hr>
+              <p>Group of 7 people</p>
+              <hr>
+              <p>Copy of the book</p>
+              <hr>
+              <p>Real Device</p>
+              <hr>
+              <p>Build a GUI</p>
+            </div>
+            <div class="card-block">
+              <a href="{{ SITEURL }}/courses/pythonlab" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card m-1 p-2">
+            <div class="card-block">
+              <p class="lead"><i>Working with Git and documenting</i></p>
+            </div>
+            <div class="card-block my-0">
+              <h1><b>€350</b></h1>
+              <p class="">2 days</p>
+              <hr>
+              <p>Up to 10 people</p>
+              <hr>
+              <p>Best practices</p>
+              <hr>
+              <p>Sharing</p>
+              <hr>
+              <p>Packaging</p>
+            </div>
+            <div class="card-block">
+              <a href="{{ SITEURL }}/courses/gitscience" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features -->
+  <!-- Carousel reviews -->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-cs-12">
+          <img class="d-block img-fluid float-left rounded" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyByJ-myQrLo6jY5sDtMWYE3ejAhzC64I4s&amp;markers=Meet+Berlage&amp;center=Meet+Berlage&amp;zoom=15&amp;size=640x480&amp;sensor=false"> </div>
+        <div class="col-md-4 col-xs-12">
+          <h1 class="">Our Location</h1>
+          <p class="lead">Our courses are given at <b style="font-weight: bold;">Meet Berlage</b>, a beautiful venue just 5 minutes away from Amsterdam Central Station.</p>
+          <p class="">Do you prefer a course at your own institute? Drop us a line at courses@uetke.com or through the form below.
+            <br> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% include "courses_offer.html" %}
+{% endblock %}

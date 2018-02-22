@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title|striptags|title }}{% endblock %}
+{% block og_title %}{{ page.title|striptags|title }}{% endblock %}
 {% block keywords %}{{ page.keywords }}{% endblock %}
 {% block content %}
 {% if page.header %}

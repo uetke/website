@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Blog Archive{% endblock %}
 {% block content %}
-<div class="container mt-5">
+<div class="container mt-5"> <!-- Container for articles -->
 {% if articles %}
     {% for article in articles_page.object_list %}
 
@@ -16,7 +16,7 @@
                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
                 </header>
 
-                <div class="entry-content mb-2">
+                <div class="entry-content mb-3">
                 {{ article.summary }}
                 <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
                 {% include 'comments.html' %}
@@ -40,5 +40,5 @@
     {% endfor %}
 </section>
 {% endif %}
-                    </div>
+</div><!-- Container for articles -->
 {% endblock content %}

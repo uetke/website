@@ -52,79 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="text-center bg-light p-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card m-1 p-2">
-            <div class="card-block">
-              <p class="lead"><i>Advanced Python for the Lab</i></p>
-            </div>
-            <div class="card-block my-0">
-              <h1><b>€750</b></h1>
-              <p class="">3 days</p>
-              <hr>
-              <p>Group of 5 people</p>
-              <hr>
-              <p>Personalized</p>
-              <hr>
-              <p>Advanced topics</p>
-              <hr>
-              <p>Complex devices</p>
-            </div>
-            <div class="card-block">
-              <a href="{{ SITEURL }}/courses/advanced" class="btn btn-light">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-primary m-1 text-white p-2">
-            <div class="card-block">
-              <p class="lead"><i>Introduction Python for the Lab</i></p>
-            </div>
-            <div class="card-block my-0">
-              <h1><b>€550</b></h1>
-              <p class="">3 days</p>
-              <hr>
-              <p>Group of 7 people</p>
-              <hr>
-              <p>Copy of the book</p>
-              <hr>
-              <p>Real Device</p>
-              <hr>
-              <p>Build a GUI</p>
-            </div>
-            <div class="card-block">
-              <a href="{{ SITEURL }}/courses/pythonlab" class="btn btn-secondary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-1 p-2">
-            <div class="card-block">
-              <p class="lead"><i>Working with Git and documenting</i></p>
-            </div>
-            <div class="card-block my-0">
-              <h1><b>€350</b></h1>
-              <p class="">2 days</p>
-              <hr>
-              <p>Up to 10 people</p>
-              <hr>
-              <p>Best practices</p>
-              <hr>
-              <p>Sharing</p>
-              <hr>
-              <p>Packaging</p>
-            </div>
-            <div class="card-block">
-              <a href="{{ SITEURL }}/courses/gitscience" class="btn btn-light">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Features -->
+  {% include "static_pages/courses_prices.html" %}
   <!-- Carousel reviews -->
   <div class="py-5">
     <div class="container">
@@ -140,5 +68,5 @@
       </div>
     </div>
   </div>
-{% include "courses_offer.html" %}
+{% include "static_pages/courses_offer.html" %}
 {% endblock %}

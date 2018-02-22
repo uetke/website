@@ -11,14 +11,27 @@
     font-size: 1.9rem;
 }
 
+.hentry h1{
+    font-size: 1.5rem;
+}
+
+.hentry p{
+    margin-bottom: 0.3rem;
+}
+
+.article-header{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
 .article-main-title, .page-main-title{
     font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.65);
 }
 
 .article-sub-title, .page-sub-title {
         font-size: 1.2rem;
-        background-color: rgba(255, 255, 255, 0.35);
+        background-color: rgba(255, 255, 255, 0.65);
     }
 
 @media screen and (min-device-width: 450px){
@@ -184,6 +197,7 @@
     margin-left: 2rem;
     margin-right: 2rem;
     padding-left: 0.5rem;
+    font-size: smaller;
 }
 
 .highlighttable .highlight{
@@ -251,12 +265,27 @@
     padding-left: 0px;
 }
 
-.latest-articles li, .latest-articles a{
+.latest-articles li{
     margin-bottom: 0.25rem;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     color: #0b0b0b;
+    border-bottom: 1px rgba(0, 0, 0, 0.34) solid;
 }
 
 .latest-articles{
     border-left: 1px rgba(0, 0, 0, 0.34) solid;
+}
+
+blockquote {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    border-left: 2px cornflowerblue solid;
+    font-size: smaller;
+}
+
+sup{
+    vertical-align: super;
+    font-size: small;
 }

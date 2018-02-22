@@ -21,20 +21,20 @@
       <div class="row">
         <div class="col-md-8 col-lg-6">
           <p class="lead">The aim of the course is to show that anybody can build software for the lab. Our intensive 3-day course covers from the basics of communicating with a device to building user interfaces.&nbsp;</p>
-          <p class="">Developing control software for labs with Python is becoming ubiquitous in all major research institutes around the world. Learn from real-world cases, with real devices and measurements. The courses are aimed at small groups of 5 people in
+          <p class="">Developing control software for labs with Python is becoming ubiquitous in all major research institutes around the world. Learn from real-world cases, with real devices and measurements. The courses are aimed at small groups of up tp 7 people in
             order to deliver personalized content to every attendant.&nbsp;</p>
           <p class="">Do you want to have a course according to the specific needs of your lab? We can work something out together, drop us a line: courses@uetke.com</p>
         </div>
         <dic class="col-md-4 col-lg-6 d-none d-md-block" style="background-image: url('{{ SITEURL }}/theme/img/python_for_the_lab_side.jpg');background-position:center center;background-size:cover;"></dic>
       </div>
-      <hr class="mt-0"> </div>
+    </div>
   </div>
-  <!-- Features -->
-  <div class="py-5" id="features">
+  <!-- Syllabus -->
+  <div class="py-2 mb-3" id="features">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1 class="pb-4 text-left">Detailed Syllabus</h1>
+          <h1 class="pb-2 text-left">Detailed Syllabus</h1>
         </div>
       </div>
       <div class="row">
@@ -85,7 +85,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="">Is this course for me?</h1>
+          <h3 class="">Is this course for me?</h3>
         </div>
         <div class="col-sm-12 col-md-5">
           <p class="lead">What do you need to know before the course:</p>
@@ -110,31 +110,25 @@
       </div>
     </div>
   </div>
-  <div class="">
+  <!-- Nex Courses -->
+  <div class="py-2">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 align-self-center">
-          <h3>Next courses</h3>
-          <p class="my-3 lead">There are no courses planned at the moment.</p>
+        <div class="col-md-6">
+          <h4>Next courses</h4>
+          <p class="my-3">There are no courses planned at the moment.</p>
           <p class="">If you are interested in a course, drop us an e-mail to <a href="mailto:courses@uetke.com">courses@uetke.com</a> or fill the form below. </p>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Location -->
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-cs-12">
-          <img class="d-block img-fluid float-left rounded" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyByJ-myQrLo6jY5sDtMWYE3ejAhzC64I4s&amp;markers=Meet+Berlage&amp;center=Meet+Berlage&amp;zoom=15&amp;size=640x480&amp;sensor=false"> </div>
-        <div class="col-md-4 col-xs-12">
-          <h1 class="">Our Location</h1>
-          <p class="lead">Our courses are given at <b style="font-weight: bold;">Meet Berlage</b>, a great location just 5 minutes away from Amsterdam Centraal</p>
-          <p class="">Do you prefer a course at your own location? Drop us a line at courses@uetke.com or through the form below.
-            <br> </p>
+        <div class="col-md-6">
+          <h4>What will you get</h4>
+          <p>At only <b>550€</b>, Python for the Lab is the only course designed to meet your needs. You will cover a lot of ground, including first-hand experience with a real acquisition device. The course is aimed at experimental scientists; general experimental knowledge and programming skills are required.</p>
+          <p>Every participant will receive a free copy of the book <b>Python For The Lab</b>. During the length of the course, participants will also get a real acquisition device for practicing at home. For a small price, you can keep it after the course has ended.</p>
+          <p>The courses are three full days, from 10 am to 5 pm, and <b>lunch is included</b>. Please bring your own laptop; if you don't own one, let us know in advance and we can arrange something for you.</p>
+          <p>Before the course, you will receive instruction on how to install all the software that you need. Everything we use is open source, therefore you will incur no extra costs.</p>
         </div>
       </div>
     </div>
   </div>
-{% include "courses_offer.html" %}
+{% include "static_pages/courses_location.html" %}
+{% include "static_pages/courses_offer.html" %}
 {% endblock %}

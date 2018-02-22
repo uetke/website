@@ -1,6 +1,25 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags|title }}{% endblock %}
 {% block keywords %}{{ article.keywords }}{% endblock %}
+{% block og_title %}{{ article.title|striptags|title }}{% endblock %}
+
+{% block og_description %}
+  {% if article.og_description %}
+  {{ article.og_description }}
+  {% else %}
+  {{ article.summary|striptags }}
+  {% endif %}
+{% endblock %}
+
+{% block description %}
+  {% if article.og_description %}
+  {{ article.og_description }}
+  {% else %}
+  {{ article.summary|striptags }}
+  {% endif %}
+{% endblock %}
+
+{% block og_url %}{{ SITEURL }}/{{ article.url }}{% endblock %}
 
 {% if article.header %}
 {% block meta_content %}
@@ -12,7 +31,8 @@
 {% endif %}
 {% block content %}
 {% if article.header %}
-<div class="pt-5 big-header" style="background-image: url('../{{ article.header_image }}');">
+<div class="pt-5 big-header" style="background-image: url('../{{ article.header_image }}');
+background-attachment: fixed;">
     <div class="mb-2 container">
       <div class="row my-md-4 pb-md-5">
         <div class="col-md-12 my-5 text-lg-left text-center align-self-center">
@@ -25,8 +45,8 @@
     </div>
 </div>
 {% else %}
-<div class="container mt-5">
-  <div class="row">
+<!--<div class="container mt-5">-->
+  <div class="row mt-5 pl-md-5 pr-md-5 article-header">
     <div class="col-md-12">
       <h1 class="display-1 text-dark article-main-title mt-3">{{ article.title }}</h1>
       {% if article.subtitle %}
@@ -34,11 +54,11 @@
       {% endif %}
     </div>
   </div>
-</div>
+<!--</div>-->
 {% endif %}
 <div class="container mt-2 mb-5">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-10">
       <article>
         <div class="entry-content">
           {{ article.content }}
@@ -48,11 +68,11 @@
       {% include 'disqus_script.html' %}
       </div>
     </div>
-    <div class="col-md-4 latest-articles d-none d-md-block">
+    <div class="col-md-2 latest-articles d-none d-md-block">
       <p class=""> Latest Articles</p>
       <ul>
-      {% for article in articles[:10] %}
-        <li><a href="{{ article.permalink }}">{{ article.title }}</a></li>
+      {% for art in articles[:10] %}
+        <li><a href="{{ SITEURL }}/{{ art.url }}">{{ art.title }}</a></li>
       {% endfor %}
       </ul>
     </div>

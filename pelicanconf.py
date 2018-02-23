@@ -38,6 +38,7 @@ TEMPLATE_PAGES = {'static_pages/courses.html': 'courses/index.html',
                   'static_pages/register.html': 'courses/register/index.html',
                   'static_pages/register_thanks.html': 'courses/register/thanks/index.html',
                   'static_pages/privacy.html': 'privacy/index.html',
+                  'static_pages/about_us.html': 'about-us/index.html',
                   'static_pages/main.html': 'index.html',}
 
 MINIFY = {

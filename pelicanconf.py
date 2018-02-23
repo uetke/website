@@ -14,13 +14,7 @@ DEFAULT_LANG = 'en'
 LOCALE = 'en_US.UTF-8'
 DEFAULT_DATE = 'fs'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'atom.xml'
-FEED_ALL_RSS = 'feed.rss'
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+
 
 
 DEFAULT_PAGINATION = 10

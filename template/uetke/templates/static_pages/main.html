@@ -8,23 +8,106 @@
   <div class="pt-5 bg-primary big-header" id="main-header">
     <div class="container mb-3 pb-3">
       <div class="row">
-        <div class="col-md-12 my-5 text-center align-self-center">
+        <div class="col-md-12 my-3 text-center align-self-center">
           <h1 class="display-1 main-title">Your Science Matters</h1>
           <h1 class="sub-title">From experimental design to data analysis</h1>
         </div>
       </div>
     </div>
   </div>
-  <!-- Article style section -->
-  <div class="py-3">
+  <div class="py3">
     <div class="container">
-      <div class="heading">
-        <div class="col-md-12">
-          <h1 class="text-center">Projects</h1>
-          <h3 class="text-center">Latest developments we have worked on</h3>
+      <!--<div class="row justify-content-center">-->
+        <!--<div class="col-md-6">-->
+          <!--<h2>At Uetke we offer</h2>-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/electronics_card.jpeg" alt="Experiment Design">
+            <div class="card-body">
+              <h5 class="card-title text-center">Experiment Design</h5>
+              <p class="card-text text-center">Ever wondered which microscopy technique you should apply to obtain the best results? If you are setting a new experiment in the laboratory, we can assist you with the design, building and more. <br />&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/computer-code_card.jpeg" alt="Computer Code">
+            <div class="card-body">
+              <h5 class="card-title text-center">Scientific Software</h5>
+              <p class="card-text text-center">We develop software to perform a variety of tasks, from controlling devices over the network to recording cameras with high frame rates. Our software will increase throughput and ensure reproducibility of your experiments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/computer_coffee_card.jpeg" alt="Data Analysis">
+            <div class="card-body">
+              <h5 class="card-title text-center">Data Analysis</h5>
+              <p class="card-text text-center">An adequate analysis of your data can change your research. We develop programs to analyze large datasets, and routines to extract features of complex images. Improve your analysis and present your results with amazing plots!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <a href="{{ SITEURL }}/courses/"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/courses_card.jpg" alt="Data Analysis"></a>
+            <div class="card-body">
+              <h5 class="card-title text-center">Courses</h5>
+              <p class="card-text text-center">Do you struggle with the software of your setup? We offer a variety of courses specially designed for researchers that work in a lab. Learn how to control your experiment, build user interfaces and more.<br />&nbsp; </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row py-5">
+    </div>
+  </div>
+<!-- Courses -->
+  <div class="py-5" id="features">
+    <div class="container">
+        <div class="col-md-12 mb-3">
+          <h1 class="text-center">Courses</h1>
+          <h3 class="text-center">A complete offer to improve your skills</h3>
+        </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="">Advanced Python for the Lab</h5>
+              <p class="text-justify">Build an entire package; develop with users in mind and learn how to deploy. Focus into advanced instruments, cameras and National Instruments DAQ.</p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="">Python for the Lab</h5>
+              <p class="text-justify">Learn everything you need to start controlling devices from your computer. Automatize tasks, improve your statistics and build user interfaces.
+                <br> </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="">Working with Git</h5>
+              <p class="text-justify">Git is a core resource for working in laboratories. Keep track of your documents and your software. Learn how to document your Python projects.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"> &nbsp; </div>
+            <div class="col-md-6 align-items-center d-flex flex-column">
+              <a href="{{ SITEURL }}/courses">
+                <button class="btn shadowed btn-secondary"> Learn more about the courses </button>
+              </a>
+            </div>
+            <div class="col-md-3"> &nbsp; </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Courses -->
+
+  <!-- Projects -->
+  <div class="py-3 mt-4">
+    <div class="container">
+      <div class="col-md-12">
+        <h1 class="text-center">Projects</h1>
+        <h3 class="text-center">Latest developments we have worked on</h3>
+      </div>
+      <div class="row py-2">
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-3">
@@ -73,82 +156,11 @@
       <div class="row">
         <div class="align-self-center col-lg-7 text-md-left text-center">
           <h2>Python Works Everywhere</h2>
-          <p class="my-4 text-muted text-justify">We use Python as our core development language. The software we develop runs in Linux, Windows or Mac PC. We use the same technology that supports desktop and mobile apps to achieve fast refresh rates, and great visualization. The code contains examples to help you expand your toolbox.</p>
+          <p class="my-4 text-muted text-justify">We use Python as our core development language. The software we develop runs in Linux, Windows or Mac PC. We use the same technology that supports desktop and mobile apps to achieve fast refresh rates, and great visualization. Our code always contains examples to help you understand it and expand your toolbox.</p>
         </div>
         <div class="align-self-center mt-5 col-lg-5 animate-in-right">
           <img class="img-fluid d-none d-md-block " src="{{ SITEURL }}/theme/img/iphone_ipad_light.jpg"> </div>
       </div>
      </div>
-  </div>
-  <!-- Features -->
-  <div class="py-5" id="features">
-    <div class="container">
-      <div class="row"><h1 class="pb-4">Our Courses</h1> </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-4">
-              <h5 class="">Advanced Python for the Lab</h5>
-              <p class="lead text-justify">Build an entire package; develop with users in mind and learn how to deploy. Focus into advanced instruments, cameras and National Instruments DAQ.</p>
-            </div>
-            <div class="col-md-4">
-              <h5 class="">Python for the Lab</h5>
-              <p class="lead text-justify">Learn everything you need to start controlling devices from your computer. Automatize tasks, improve your statistics and build User Interfaces.
-                <br> </p>
-            </div>
-            <div class="col-md-4">
-              <h5 class="">Working with Git</h5>
-              <p class="lead text-justify">Git is a core resource for working in laboratories. Keep track of your documents and your software. Learn how to document your Python projects.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3"> &nbsp; </div>
-            <div class="col-md-6 align-items-center d-flex flex-column">
-              <a href="{{ SITEURL }}/courses">
-                <button class="btn shadowed btn-secondary"> Learn more about the courses </button>
-              </a>
-            </div>
-            <div class="col-md-3"> &nbsp; </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Features -->
-  <!-- Carousel reviews -->
-  <div class="pb-5 section text-center bg-light" id="reviews">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img class="d-block img-fluid mx-auto" src="{{ SITEURL }}/theme/img/electronics_slider.jpeg" data-holder-rendered="true">
-                <div class="carousel-caption">
-                  <h3>Experiment design</h3>
-                  <p>If you are planning new experiments, we can help you. From the design to the building of a new experiment we can be by your side. Ever wondered what microscopy technique is best for your problem?</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid mx-auto" src="{{ SITEURL }}/theme/img/computer-code_slider.jpeg" data-holder-rendered="true">
-                <div class="carousel-caption">
-                  <h3>Scientific software</h3>
-                  <p>We develop software for controlling your setup. Ever wonder how to increase your throughput and ensure reproducibility? We build software that does exactly what you need.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid mx-auto" src="{{ SITEURL }}/theme/img/computer_coffee_slider.jpeg" data-holder-rendered="true">
-                <div class="carousel-caption">
-                  <h3>Data analysis</h3>
-                  <p>Proper data analysis of your results can change the profile of your research. Feature extraction from complex images or large datasets. Improve your statistics with already available data and present it with amazing plots.</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </div> <!-- Projects -->
 {% endblock %}

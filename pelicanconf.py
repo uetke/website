@@ -14,9 +14,6 @@ DEFAULT_LANG = 'en'
 LOCALE = 'en_US.UTF-8'
 DEFAULT_DATE = 'fs'
 
-
-
-
 DEFAULT_PAGINATION = 10
 INDEX_SAVE_AS = 'blog/index.html'
 # Uncomment following line if you want document-relative URLs when developing

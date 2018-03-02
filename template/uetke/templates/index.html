@@ -8,10 +8,14 @@
             {# First item #}
             {% if loop.first %}
                 <section id="content" class="body">
-                    <ul id="posts-list" class="hfeed" style="list-style-type: none;" ">
+                    <!-- <ul id="posts-list" class="hfeed" style="list-style-type: none;" "> -->
+                    <div class="row">
             {% endif %}
-            <li><article class="hentry">
+            <div class="col-md-4"><article class="hentry">
                 <header>
+                    {% if article.header %}
+                    <img src="{{ SITEURL }}/blog/{{ article.category }}/{{ article.header_image }}" style="width:100%">
+                    {% endif %}
                     <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
                 </header>
@@ -21,10 +25,11 @@
                 <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
                 {% include 'comments.html' %}
                 </div><!-- /.entry-content -->
-            </article></li>
+            </article></div>
         {% if loop.last %}
             {% if loop.length > 1 or articles_page.has_other_pages() %}
-                </ul><!-- /#posts-list -->
+                <!--</ul><!-- /#posts-list -->
+                </div> <!-- /Row -->
                 {% if articles_page.has_other_pages() %}
                     {% include 'pagination.html' %}
                 {% endif %}

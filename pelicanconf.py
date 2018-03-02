@@ -6,7 +6,7 @@ AUTHOR = 'Aquiles Carattino'
 SITENAME = 'Uetke'
 SITEURL = 'uetke.com'
 
-PATH = '../website_content'
+PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -14,7 +14,7 @@ DEFAULT_LANG = 'en'
 LOCALE = 'en_US.UTF-8'
 DEFAULT_DATE = 'fs'
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 9
 INDEX_SAVE_AS = 'blog/index.html'
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

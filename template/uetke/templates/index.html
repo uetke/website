@@ -14,7 +14,8 @@
             <div class="col-md-4"><article class="hentry">
                 <header>
                     {% if article.header %}
-                    <img src="{{ SITEURL }}/blog/{{ article.category }}/{{ article.header_image }}" style="width:100%">
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                       title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/blog/{{ article.category }}/{{ article.header_image }}" style="width:100%"></a>
                     {% endif %}
                     <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>

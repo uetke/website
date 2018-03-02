@@ -6,7 +6,7 @@ AUTHOR = 'Aquiles Carattino'
 SITENAME = 'Uetke'
 SITEURL = 'uetke.com'
 
-PATH = 'content'
+PATH = '../website_content'
 
 TIMEZONE = 'Europe/Paris'
 

@@ -6,7 +6,7 @@ AUTHOR = 'Aquiles Carattino'
 SITENAME = 'Uetke'
 SITEURL = 'uetke.com'
 
-PATH = 'content'
+PATH = '../website_content'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -39,7 +39,7 @@ MINIFY = {
 }
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ['minify', 'excercises_directive', 'images', 'header_image', 'sitemap']
+PLUGINS = ['excercises_directive', 'images', 'header_image', 'sitemap']
 
 ARTICLE_URL = 'blog/{category}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{category}/{slug}/index.html'

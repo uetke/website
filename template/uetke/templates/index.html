@@ -8,14 +8,14 @@
             {# First item #}
             {% if loop.first %}
                 <section id="content" class="body">
-                    <!-- <ul id="posts-list" class="hfeed" style="list-style-type: none;" "> -->
                     <div class="row">
             {% endif %}
-            <div class="col-md-4"><article class="hentry">
+            <div class="col-md-4">
+                <article class="hentry">
                 <header>
                     {% if article.header %}
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                       title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/{{ article.header_image }}" style="width:100%"></a>
+                       title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/{{ article.header_image }}" style="width:100%; border-radius: 10px;"></a>
                     {% else %}
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                        title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/theme/img/general_header.jpg" style="width:100%"></a>
@@ -24,15 +24,15 @@
                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
                 </header>
 
-                <div class="entry-content mb-3">
-                {{ article.summary }}
-                <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
-                {% include 'comments.html' %}
-                </div><!-- /.entry-content -->
-            </article></div>
+                    <div class="entry-content mb-3">
+                    {{ article.summary }}
+                    <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
+                    {% include 'comments.html' %}
+                    </div><!-- /.entry-content -->
+                </article>
+            </div>
         {% if loop.last %}
             {% if loop.length > 1 or articles_page.has_other_pages() %}
-                <!--</ul><!-- /#posts-list -->
                 </div> <!-- /Row -->
                 {% if articles_page.has_other_pages() %}
                     {% include 'pagination.html' %}

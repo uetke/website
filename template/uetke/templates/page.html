@@ -33,13 +33,13 @@
 
 {% block content %}
 {% if page.header %}
-<div class="pt-5 big-header" style="background-image: url('{{ page.header_image }}'); background-attachment: fixed;">
-    <div class="mb-2 pb-5 container">
-        <div class="row my-4 pb-5">
+<div class="pt-5 big-header" style="background-image: url('{{ SITEURL }}/{{ page.header_image }}'); background-attachment: fixed;">
+    <div class="mb-2 ml-5 mr-5">
+       <div class="row my-md-4 pb-md-5">
             <div class="col-md-12 my-5 text-lg-left text-center align-self-center">
-                <h1 class="display-1 text-dark main-title">{{ page.title }}</h1>
+                <h1 class="display-1 text-dark page-main-title">{{ page.title }}</h1>
                 {% if page.subtitle %}
-                <h1 class="text-left text-dark sub-title">{{ page.subtitle }}</h1>
+                <h1 class="text-left text-dark page-sub-title">{{ page.subtitle }}</h1>
                 {% endif %}
             </div>
         </div>

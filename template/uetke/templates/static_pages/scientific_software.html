@@ -1,10 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Custom Scientific Software Development{% endblock %}
+{% block description %}Development of highly specific software for laboratories{% endblock %}
+{% block keywords %}Software for the Lab, Software, Laboratory, Custom, Solutions, Optics{% endblock %}
+
+{% block og_title %}Custom Scientific Software Development{% endblock %}
+{% block og_description %}Development of highly specific software for laboratories.{% endblock %}
+{% block og_url %}{{ SITEURL }}/scientific-software/{% endblock %}
+{% block meta_content %}
+  <meta property="og:image" content="{{ SITEURL }}/theme/img/software-header.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+{% endblock %}
+
+{% block content %}
+<!-- Cover -->
+  <div class="pt-5 bg-primary big-header" style="background-image: url('{{ SITEURL }}/theme/img/software-header.jpg'); background-attachment: fixed;">
+    <div class="mb-2 ml-5 mr-5">
+       <div class="row my-md-4 pb-md-5">
+            <div class="col-md-12 my-5 text-lg-left text-center align-self-center">
+              <h1 class="text-left page-main-title">Scientific Software Development</h1>
+              <h1 class="text-left page-sub-title">Development of highly specific software for laboratories</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-10">
+          <p class="lead text-justify"><a href="/">Uetke</a> specializes in the development of highly specific software for the lab.</p>
+
+          <p class="text-justify">Many laboratories face a bottleneck when software turns into a handicap instead of a tool for performing experiments. However, few Ph.D. and postdocs have the knowledge and the time to sit down and program the tools they need to automatize tasks or to develop a proper user interface for visualizing the experiment in real-time. Leveraging from Uetke's expertise, labs around the world can cut down development times and focus into the science questions they want to answer.</p>
+
+          <p class="text-justify">We work in <b>close collaboration with lab managers and with younger researchers</b>. In this way, we can fulfill the requests for the long-term view of the group and those that arise from the daily use of the software. We have built extensive experience working in collaboration with different labs. This allowed us to understand the needs at every step of the development plan, especially how to to lay out a development environment that will be sustainable in the long term. Our software is properly documented and designed in such a way that future users can expand its functionality
+    without complications.</p>
+
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

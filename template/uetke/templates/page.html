@@ -1,10 +1,39 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title|striptags|title }}{% endblock %}
-{% block og_title %}{{ page.title|striptags|title }}{% endblock %}
 {% block keywords %}{{ page.keywords }}{% endblock %}
+
+{% block og_title %}{{ page.title|striptags|title }}{% endblock %}
+
+{% block og_description %}
+  {% if page.og_description %}
+  {{ page.og_description }}
+  {% else %}
+  {{ page.summary|striptags }}
+  {% endif %}
+{% endblock %}
+
+{% block description %}
+  {% if page.og_description %}
+  {{ page.og_description }}
+  {% else %}
+  {{ page.summary|striptags }}
+  {% endif %}
+{% endblock %}
+
+{% block og_url %}{{ SITEURL }}/{{ page.url }}{% endblock %}
+
+{% if page.header %}
+{% block meta_content %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ page.header_image }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+{% endblock %}
+{% endif %}
+
 {% block content %}
 {% if page.header %}
-<div class="pt-5 big-header" style="background-image: url('{{ SITEURL }}/images/{{ page.header }}');">
+<div class="pt-5 big-header" style="background-image: url('{{ page.header_image }}'); background-attachment: fixed;">
     <div class="mb-2 pb-5 container">
         <div class="row my-4 pb-5">
             <div class="col-md-12 my-5 text-lg-left text-center align-self-center">

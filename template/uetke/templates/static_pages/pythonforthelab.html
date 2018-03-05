@@ -1,7 +1,17 @@
 {% extends "base.html" %}
-{% block title %}Python for the Lab: The definitive course for scientists{% endblock %}
-{% block description %}Python for the Lab is the ultimate course for scientists who want to gain control over their experiment{% endblock %}
+{% block title %}Python for the Lab: The definitive introduction course for scientists{% endblock %}
+{% block description %}Python for the Lab is the ultimate course for scientists who want to gain control over their experiments{% endblock %}
 {% block keywords %}User Interface, GUI, courses{% endblock %}
+
+{% block og_title %}Python for the Lab: The definitive introduction course for scientists{% endblock %}
+{% block og_description %}Python for the Lab is the ultimate course for scientists who want to gain control over their experiments.{% endblock %}
+{% block og_url %}{{ SITEURL }}/courses/pythonlab/{% endblock %}
+{% block meta_content %}
+  <meta property="og:image" content="{{ SITEURL }}/theme/img/python_for_the_lab_header.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+{% endblock %}
 
 {% block content %}
   <!-- Cover -->

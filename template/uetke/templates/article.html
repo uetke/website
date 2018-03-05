@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags|title }}{% endblock %}
 {% block keywords %}{{ article.keywords }}{% endblock %}
+
 {% block og_title %}{{ article.title|striptags|title }}{% endblock %}
 
 {% block og_description %}
@@ -23,15 +24,16 @@
 
 {% if article.header %}
 {% block meta_content %}
-  <meta property="og:image" content="{{ SITEURL }}/blog/{{ article.category }}/{{ article.header_image }}">
+  <meta property="og:image" content="{{ SITEURL }}/{{ article.header_image }}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
 {% endblock %}
 {% endif %}
+
 {% block content %}
 {% if article.header %}
-<div class="pt-5 big-header" style="background-image: url('../{{ article.header_image }}');
+<div class="pt-5 big-header" style="background-image: url('{{ SITEURL }}/{{ article.header_image }}');
 background-attachment: fixed;">
     <div class="mb-2 container">
       <div class="row my-md-4 pb-md-5">

@@ -54,3 +54,5 @@ SITEMAP = {
     'format': 'xml',
     'exclude': ['archives.html', 'tags.html', 'category/', 'author/', 'tag/', 'categories.html']
 }
+
+HEADERS_FOLDER = 'header_images'

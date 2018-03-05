@@ -7,6 +7,8 @@ import itertools
 import logging
 # import multiprocessing
 import os
+from shutil import copyfile
+
 # import re
 # import sys
 
@@ -521,12 +523,27 @@ def process_image(generator, content, image):
     if image.startswith('{attach}'):
         image = attach_clipper(image)
         path = os.path.join(generator.settings.get('PATH'),content.relative_dir, image)
+        if os.path.isfile(path):
+            if content.slug:
+                out_dir = os.path.join(generator.settings.get('HEADERS_FOLDER'), content.slug)
 
-    if os.path.isfile(path):
-         # photo = os.path.splitext(image)[0].lower() + '.jpg'
-         content.header_image = (os.path.basename(image).lower())
-    else:
-         logger.error('photo: No photo for {} at {}'.format(content.source_path, path))
+            else:
+                out_dir = os.path.join(generator.settings.get('HEADERS_FOLDER'), content.relative_dir)
+
+            output_path = os.path.join(generator.output_path, out_dir)
+
+            if not os.path.exists(output_path):
+                os.makedirs(output_path)
+
+            output_path = os.path.join(output_path, image)
+
+            if not os.path.isfile(output_path):
+                copyfile(path, output_path)
+
+            content.header_image = os.path.join(out_dir, image)
+            print('Header Image: {}'.format(content.header_image))
+        else:
+             logger.error('photo: No photo for {} at {}'.format(content.source_path, path))
 
 
 def detect_header(generator, content):

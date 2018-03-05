@@ -1,3 +1,7 @@
+body{
+    font-size: 1.15rem;
+}
+
 .big-header {
   background-position: center center;
   background-repeat: no-repeat;
@@ -35,11 +39,14 @@
 .article-main-title, .page-main-title{
     font-size: 1.5rem;
     background-color: rgba(255, 255, 255, 0.65);
+    color: #343a40;
+
 }
 
 .article-sub-title, .page-sub-title {
-        font-size: 1.2rem;
-        background-color: rgba(255, 255, 255, 0.65);
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    color: #343a40;
     }
 
 @media screen and (min-device-width: 450px){
@@ -275,7 +282,7 @@
 
 .latest-articles li{
     margin-bottom: 0.25rem;
-    font-size: 0.65rem;
+    font-size: 0.85rem;
     color: #0b0b0b;
     border-bottom: 1px rgba(0, 0, 0, 0.34) solid;
 }

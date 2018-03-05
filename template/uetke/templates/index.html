@@ -16,6 +16,9 @@
                     {% if article.header %}
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                        title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/blog/{{ article.category }}/{{ article.header_image }}" style="width:100%"></a>
+                    {% else %}
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                       title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/theme/img/general_header.jpg" style="width:100%"></a>
                     {% endif %}
                     <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>

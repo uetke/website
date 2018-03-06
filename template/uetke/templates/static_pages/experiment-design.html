@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}Experiment Design{% endblock %}
+{% block description %}We help you design the best experiment to answer your scientific questions{% endblock %}
+{% block keywords %}Data, Analysis, Software, Laboratory, Custom, Solutions, Optics, Experiment {% endblock %}
+
+{% block og_title %}Experiment Design{% endblock %}
+{% block og_description %}We help you design the best experiment to answer your scientific questions{% endblock %}
+{% block og_url %}{{ SITEURL }}/experiment-design{% endblock %}
+{% block meta_content %}
+  <meta property="og:image" content="{{ SITEURL }}/theme/img/software-header.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+{% endblock %}
+
+{% block content %}
+<!-- Cover -->
+  <div class="pt-5 bg-primary big-header" style="background-image: url('{{ SITEURL }}/theme/img/software-header.jpg'); background-attachment: fixed;">
+    <div class="mb-2 ml-5 mr-5">
+       <div class="row my-md-4 pb-md-5">
+            <div class="col-md-12 my-5 text-lg-left text-center align-self-center">
+              <h1 class="text-left page-main-title">Experiment Design</h1>
+              <h1 class="text-left page-sub-title">We help you design the best experiment to answer your scientific questions</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container mb-5">
+    <!-- Three Pillars -->
+      <div class="row justify-content-between my-4 pl-md-5 pr-md-5">
+        <div class="col-md-4 text-center">
+          <img src="{{ SITEURL }}/theme/img/group.svg" style="width: 75%"/>
+          <p class="lead mt-3">Techniques</p>
+          <p class="text-justify">We help you choose the best microscopy techniques to collect the data you need to answer your questions.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{{ SITEURL }}/theme/img/handshake.svg" style="width: 75%"/>
+          <p class="lead mt-3">Setup</p>
+          <p class="text-justify">We help you build and align a microscope right at your optical table. Leverage from our expertise.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{{ SITEURL }}/theme/img/line-chart.svg" style="width: 75%"/>
+          <p class="lead mt-3">Training</p>
+          <p class="text-justify">We explain to the group how to use the microscope and how to troubleshoot the most common problems.</p>
+        </div>
+      </div>
+    <!-- Experiment Design for Proposals -->
+      <div class="row mt-md-4">
+        <div class="col-md-4"><img src="{{ SITEURL }}/theme/img/writing_software.jpg" style="width: 100%;"/> </div>
+        <div class="col-md-8"><p class="lead text-justify">Experiment Design for your Proposals</p>
+          <p class="text-justify">If you are writing a grant proposal and need help with the experimental design section, we can assist you. Don't let good ideas slip because of not considering the most suitable techniques.</p>
+          <p>We can help you plan ahead and develop a detailed proposal including materials, schedules and costs.</p>
+          <p><a href="/contact">Contact us</a> if you are unsure about what microscopy techniques you are going to use in your next project.</p>
+        </div>
+      </div>
+     <!-- The Agile Process -->
+      <div class="row py-3 mt-3 mb-3 bg-light">
+          <div class="col-12 text-center">
+              <h3>Agile Software Development</h3>
+          </div>
+          <div class="col-md-8">
+              <p class="text-justify">At Uetke we are committed to deliver solutions through an Agile process. We believe that the best way to success is by following the four values of the manifesto:
+                  <ul>
+                    <li><b>Individuals and Interactions</b> over processes and tools</li>
+                    <li><b>Working Software</b> over comprehensive documentation</li>
+                    <li><b>Customer Collaboration</b> over contract negotiation</li>
+                    <li><b>Responding to Change</b> over following a plan</li>
+                  </ul>
+              </p>
+          </div>
+          <div class="col-md-4">
+              <img src="{{ SITEURL }}/theme/img/compass.jpg" style="width: 100%; height: auto;">
+          </div>
+      </div>
+    <!-- Accordion About Uetke-->
+    <div class="row">
+      <div class="col-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How do we work
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-justify">We work side by side with senior and junior members of the lab. Through face-to-face discussions we will develop a full strategy regarding your experimental needs. We provide a comprehensive analysis, basing our conclusions not only on costs, but also on the availability of human resources, long term goals of the lab, and our own past experiences.</p>
+                  <p class="text-justify">We can help you all the way from the writing of a proposal to the setup of the elements on an optical table, including the evaluation of different purchasing options. You should contact us if you doubt which microscope will answer your questions, or you need help calculating frame rates, resolution, etc.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What do we deliver
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-justify">Designing and building an experiment is a multi-stage task. If you are writing a proposal, you will get all the information you need for a complete experimental section, including calculations of resolution, frame rates, laser power, etc. If you are in the phase of building a setup, but lacking experienced researchers, we can build the microscope for you and train its users. We can also assist you if you need highly trained researchers for short periods of time to perform specific measurements.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What can we do for you
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-justify">Scientific work starts by choosing a question and follows by designing the experiments that will allow researchers to answer it. When designing an experiment, many different factors need to be taken into account. At Uetke we have built extensive expertise in problems related to microscopy.</p>
+                  <p class="text-justify">We can assist you from the moment of writing a proposal to the setup of a microscope. Together with researchers and technicians, we can determine what are the best tools in order to achieve the best results. We can help you develop a timeline that fits with your plan and a budget for materials and services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <h3>Full stack solutions</h3>
+          <p class="text-justify">At Uetke we offer integral solutions. We can help you all the way from the <a href="/experiment-design">design of the experiment</a>, to the <a href="/scientific-software">development of software for controlling setups</a> and the <a href="/data-analysis">data analysis</a>, including the <a href="/courses">training of scientists</a>. It doesn't matter if you are an established group, if you are applying for your startup grant or if you are just curious about what we do. <a href="/contact">Contact us</a> to see how we can be of assistance.</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

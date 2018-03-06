@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}Data Analysis for Scientific Applications{% endblock %}
+{% block description %}Development of highly specific data analysis software for scientific applications{% endblock %}
+{% block keywords %}Data, Analysis, Software, Laboratory, Custom, Solutions, Optics, {% endblock %}
+
+{% block og_title %}Data Analysis for Scientific Applications{% endblock %}
+{% block og_description %}Development of highly specific data analysis software for scientific applications{% endblock %}
+{% block og_url %}{{ SITEURL }}/data-analysis{% endblock %}
+{% block meta_content %}
+  <meta property="og:image" content="{{ SITEURL }}/theme/img/software-header.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+{% endblock %}
+
+{% block content %}
+<!-- Cover -->
+  <div class="pt-5 bg-primary big-header" style="background-image: url('{{ SITEURL }}/theme/img/software-header.jpg'); background-attachment: fixed;">
+    <div class="mb-2 ml-5 mr-5">
+       <div class="row my-md-4 pb-md-5">
+            <div class="col-md-12 my-5 text-lg-left text-center align-self-center">
+              <h1 class="text-left page-main-title">Data Analysis</h1>
+              <h1 class="text-left page-sub-title">Development of highly specific data analysis software for scientific applications</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container mb-5">
+    <!-- Three Pillars -->
+      <div class="row justify-content-between my-4 pl-md-5 pr-md-5">
+        <div class="col-md-4 text-center">
+          <img src="{{ SITEURL }}/theme/img/group.svg" style="width: 75%"/>
+          <p class="lead mt-3">Handling</p>
+          <p class="text-justify">We develop policies and tools to store data in secure and redundant locations, establishing procedures for ensuring traceability and reproducibility of the results.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{{ SITEURL }}/theme/img/handshake.svg" style="width: 75%"/>
+          <p class="lead mt-3">Analysis</p>
+          <p class="text-justify">We find the best way to extract as much information from your data as possible. We can develop new tools or implement existing platforms. From statistical tests to image analysis.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{{ SITEURL }}/theme/img/line-chart.svg" style="width: 75%"/>
+          <p class="lead mt-3">Visualization</p>
+          <p class="text-justify">Show your data in professional formats. High-quality plots and images to convey as much information as possible. From 3D figures to animations, ready to use in presentations, papers and applications.</p>
+        </div>
+      </div>
+    <!-- Data Analysis for Proposals -->
+      <div class="row mt-md-4">
+        <div class="col-md-4"><img src="{{ SITEURL }}/theme/img/writing_software.jpg" style="width: 100%;"/> </div>
+        <div class="col-md-8"><p class="lead text-justify">Data Analysis for your Proposals</p>
+          <p class="text-justify">If you are writing a grant proposal and need help with the data analysis section, we can assist you. Don't let good experimental work be limited by the capabilities of your data analysis.</p>
+          <p>We can help you plan ahead and develop a detailed proposal including how data is going to be handled, schedules and costs.</p>
+          <p><a href="/contact">Contact us</a> if you are unsure of how you are going to handle your data in your next proposal.</p>
+        </div>
+      </div>
+     <!-- The Agile Process -->
+      <div class="row py-3 mt-3 mb-3 bg-light">
+          <div class="col-12 text-center">
+              <h3>Agile Software Development</h3>
+          </div>
+          <div class="col-md-8">
+              <p class="text-justify">At Uetke we are committed to deliver solutions through an Agile process. We believe that the best way to success is by following the four values of the manifesto:
+                  <ul>
+                    <li><b>Individuals and Interactions</b> over processes and tools</li>
+                    <li><b>Working Software</b> over comprehensive documentation</li>
+                    <li><b>Customer Collaboration</b> over contract negotiation</li>
+                    <li><b>Responding to Change</b> over following a plan</li>
+                  </ul>
+              </p>
+          </div>
+          <div class="col-md-4">
+              <img src="{{ SITEURL }}/theme/img/compass.jpg" style="width: 100%; height: auto;">
+          </div>
+      </div>
+    <!-- Accordion About Uetke-->
+    <div class="row">
+      <div class="col-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How do we work
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-justify">After building a setup, many researchers face the problem of analyzing large amounts of data without the proper tools. Sometimes it is not only about the quantity, but the complexity of the information gathered. Determining the edges of a cell, counting the number of nanoparticles in an image, fitting complex models, finding nearest neighbors, are just some examples of what a researcher may face.</p>
+                  <p class="text-justify">At Uetke we work closely with scientists to understand what their needs are. We can help them understand what are the best statistical tests for their data and how to make the best out of what they have already acquired. Researchers can keep focused on their experiments while we make the best to understand their results. Analysing data is very time consuming especially when lacking the basic programming knowledge.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What do we deliver
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-justify">Depending on the task, we deliver different solutions. If we are asked to perform data analysis, we will deliver a completely open-source package that can be audited and expanded later on. We can also train researchers on how to analyse their data and how to better use computational resources. If we are asked to develop a data-handling procedure, we will deliver a custom made handbook with all the information. We will always work closely with researches to develop a full platform to meet their needs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Why outsourcing data analysis
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-justify">Data analysis is a crucial part of any scientist's work. In order to reproduce results, researchers need not only data but also the analysis software that was used. Proprietary software doesn't allow users to audit its content and therefore bugs and updates can make it impossible to reproduce a result even starting from the same dataset. The world is asking for more open science and at Uetke we are prepared for it.</p>
+                  <p class="text-justify">Researchers can't know everything about everything but they can leverage about the expertise of others. People focused into performing complex experiments sometimes lack the time to train themselves in data analysis and software development. Uetke can fill that gap with a sustainable approach. We deliver high quality software that can be inspected by its users. Our programs can, therefore, be used as learning examples for further development and can be audited by anyone.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <h3>Full stack solutions</h3>
+            <p class="text-justify">At Uetke we offer integral solutions. We can help you all the way from the <a href="/experiment-design">design of the experiment</a>, to the <a href="/scientific-software">development of software for controlling setups</a> and the <a href="/data-analysis">data analysis</a>, including the <a href="/courses">training of scientists</a>. It doesn't matter if you are an established group, if you are applying for your startup grant or if you are just curious about what we do. <a href="/contact">Contact us</a> to see how we can be of assistance.</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

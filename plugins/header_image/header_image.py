@@ -541,7 +541,6 @@ def process_image(generator, content, image):
                 copyfile(path, output_path)
 
             content.header_image = os.path.join(out_dir, image)
-            print('Header Image: {}'.format(content.header_image))
         else:
              logger.error('photo: No photo for {} at {}'.format(content.source_path, path))
 

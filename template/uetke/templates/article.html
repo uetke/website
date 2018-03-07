@@ -65,6 +65,9 @@ background-attachment: fixed;">
         <div class="entry-content">
           {{ article.content }}
         </div><!-- /.entry-content -->
+        <div class="author-information mb-3">
+          The article <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></i> was written by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>.
+        </div>
       </article>
       <div class="comment-section"><!-- Comments -->
       {% include 'disqus_script.html' %}

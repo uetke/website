@@ -14,26 +14,19 @@
 
 {% block content %}
   <!-- Cover -->
-  <div class="pt-5 bg-primary big-header" id="main-header">
-    <div class="container mb-3 pb-3">
-      <div class="row">
-        <div class="col-md-12 my-3 text-center align-self-center">
-          <h1 class="display-1 main-title">Your Science Matters</h1>
-          <h1 class="sub-title">From experimental design to data analysis</h1>
-        </div>
-      </div>
+<div class="pt-5 pb-5 bg-primary big-header" id="main-header">
+  <div class="row">
+    <div class="col-md-12 my-3 text-center align-self-center">
+      <h1 class="display-1 main-title">Your Science Matters</h1>
+      <h1 class="sub-title">From experimental design to data analysis</h1>
     </div>
   </div>
-  <div class="py3">
-    <div class="container">
-      <!--<div class="row justify-content-center">-->
-        <!--<div class="col-md-6">-->
-          <!--<h2>At Uetke we offer</h2>-->
-        <!--</div>-->
-      <!--</div>-->
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
+</div>
+<div class="container">
+  <!-- Services -->
+  <div class="row py-3">
+    <div class="col-md-3">
+      <div class="card">
             <a href="{{ SITEURL }}/experiment-design/"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/electronics_card.jpeg" alt="Experiment Design"></a>
             <div class="card-body">
               <h5 class="card-title text-center"><a href="{{ SITEURL }}/experiment-design/">Experiment Design</a></h5>
@@ -55,7 +48,7 @@
             <a href="{{ SITEURL }}/data-analysis/"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/computer_coffee_card.jpeg" alt="Data Analysis"></a>
             <div class="card-body">
               <h5 class="card-title text-center"><a href="{{ SITEURL }}/data-analysis/">Data Analysis</a></h5>
-              <p class="card-text text-center">An adequate analysis of your data can change your research. We develop programs to analyze large datasets, and routines to extract features of complex images. Improve your analysis and present your results with amazing plots!</p>
+              <p class="card-text text-center">An adequate analysis of your data can change your research. We develop programs to analyze large datasets, and routines to extract features of complex images. Present your results with amazing plots.</p>
             </div>
           </div>
         </div>
@@ -69,40 +62,36 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 <!-- Courses -->
-  <div class="py-5" id="features">
-    <div class="container">
-        <div class="col-md-12 mb-3">
-          <h1 class="text-center">Courses</h1>
-          <h3 class="text-center">A complete offer to improve your skills</h3>
-        </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-4">
-              <h5 class="">Advanced Python for the Lab</h5>
-              <p class="text-justify">Build an entire package; develop with users in mind and learn how to deploy. Focus into advanced instruments, cameras and National Instruments DAQ.</p>
-            </div>
-            <div class="col-md-4">
-              <h5 class="">Python for the Lab</h5>
-              <p class="text-justify">Learn everything you need to start controlling devices from your computer. Automatize tasks, improve your statistics and build user interfaces.
-                <br> </p>
-            </div>
-            <div class="col-md-4">
-              <h5 class="">Working with Git</h5>
-              <p class="text-justify">Git is a core resource for working in laboratories. Keep track of your documents and your software. Learn how to document your Python projects.</p>
-            </div>
+  <div class="row py-5" id="courses">
+    <div class="col-md-12 mb-3">
+      <h1 class="text-center">Courses</h1>
+      <h3 class="text-center">A complete offer to improve your skills</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="">Advanced Python for the Lab</h5>
+            <p class="text-justify">Build an entire package; develop with users in mind and learn how to deploy. Focus into advanced instruments, cameras and National Instruments DAQ.</p>
           </div>
-          <div class="row">
-            <div class="col-md-3"> &nbsp; </div>
-            <div class="col-md-6 align-items-center d-flex flex-column">
-              <a href="{{ SITEURL }}/courses">
-                <button class="btn shadowed btn-secondary"> Learn more about the courses </button>
-              </a>
-            </div>
-            <div class="col-md-3"> &nbsp; </div>
+          <div class="col-md-4">
+            <h5 class="">Python for the Lab</h5>
+            <p class="text-justify">Learn everything you need to start controlling devices from your computer. Automatize tasks, improve your statistics and build user interfaces.<br>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="">Working with Git</h5>
+            <p class="text-justify">Git is a core resource for working in laboratories. Keep track of your documents and your software. Learn how to document your Python projects.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"> &nbsp; </div>
+          <div class="col-md-6 align-items-center d-flex flex-column">
+            <a href="{{ SITEURL }}/courses"><button class="btn shadowed btn-secondary"> Learn more about the courses </button></a>
+          </div>
+          <div class="col-md-3"> &nbsp;
           </div>
         </div>
       </div>
@@ -110,66 +99,17 @@
   </div><!-- Courses -->
 
   <!-- Projects -->
-  <div class="py-3 mt-4">
-    <div class="container">
-      <div class="col-md-12">
-        <h1 class="text-center">Projects</h1>
-        <h3 class="text-center">Latest developments we have worked on</h3>
-      </div>
-      <div class="row py-2">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card">
-                <a href="{{ SITEURL }}/projects/network-control"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/beaglebone-black-front_small.jpg" alt="Beaglebone"></a>
-                <div class="card-body">
-                  <h6 class="card-title">Network Control</h6>
-                  <p class="card-text">Control devices through the network in an easy and customizable way. Don't need to depend on one computer</p>
-                  <a href="{{ SITEURL }}/projects/network-control" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <a href="{{ SITEURL }}/projects/optical-tweezers"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/UUTrap_Screenshot_small.jpg" alt="Optical tweezers"></a>
-                <div class="card-body">
-                  <h6 class="card-title">Optical Tweezers</h6>
-                  <p class="card-text">Quickly visualize data from an optical trap. It allows fast acquisition and customizable control.</p>
-                  <a href="{{ SITEURL }}/projects/optical-tweezers" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <a href="{{ SITEURL }}/projects/camera-acquisition"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/UUTrack_screenshot_small.jpg" alt="Camera Acquisition Screenshot"></a>
-                <div class="card-body">
-                  <h6 class="card-title">Camera Acquisition</h6>
-                  <p class="card-text">Real-time tracking and flexible platform for camera acquisition. Achieve frame rates in the range of the kHz.</p>
-                  <a href="{{ SITEURL }}/projects/camera-acquisition" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <a href="http://uutrack.readthedocs.io/en/latest/" target="_blank"><img class="card-img-top d-none d-md-block" src="{{ SITEURL }}/theme/img/documentation_small.jpg" alt="Read The Docs Screenshot  "></a>
-                <div class="card-body">
-                  <h6 class="card-title">Documentation</h6>
-                  <p class="card-text">All our projects are shiped with beautiful documentation for you to keep developing and customizing</p>
-                  <a href="http://uutrack.readthedocs.io/en/latest/" target="_blank" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="align-self-center col-lg-7 text-md-left text-center">
-          <h2>Python Works Everywhere</h2>
-          <p class="my-4 text-muted text-justify">We use Python as our core development language. The software we develop runs in Linux, Windows or Mac PC. We use the same technology that supports desktop and mobile apps to achieve fast refresh rates, and great visualization. Our code always contains examples to help you understand it and expand your toolbox.</p>
-        </div>
-        <div class="align-self-center mt-5 col-lg-5 animate-in-right">
-          <img class="img-fluid d-none d-md-block " src="{{ SITEURL }}/theme/img/iphone_ipad_light.jpg"> </div>
-      </div>
-     </div>
-  </div> <!-- Projects -->
+  {% include "static_pages/projects.html" %}
+  <!-- Projects -->
+
+  <div class="row">
+    <div class="align-self-center col-lg-7 text-md-left text-center">
+      <h2>Python Works Everywhere</h2>
+      <p class="my-4 text-muted text-justify">We use Python as our core development language. The software we develop runs in Linux, Windows or Mac PC. We use the same technology that supports desktop and mobile apps to achieve fast refresh rates, and great visualization. Our code always contains examples to help you understand it and expand your toolbox.</p>
+    </div>
+    <div class="align-self-center mt-5 col-lg-5 animate-in-right">
+      <img class="img-fluid d-none d-md-block " src="{{ SITEURL }}/theme/img/iphone_ipad_light.jpg">
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+
 AUTHOR = 'Aquiles Carattino'
 SITENAME = 'Uetke'
 SITEURL = 'uetke.com'
@@ -42,7 +43,7 @@ MINIFY = {
 }
 
 PLUGIN_PATHS = ['plugins', '../pelican-plugins']
-PLUGINS = ['excercises_directive', 'images', 'header_image', 'sitemap', 'related_posts', 'newsletter_directive', 'share_post']
+PLUGINS = ['excercises_directive', 'images', 'header_image', 'sitemap', 'related_posts', 'newsletter_directive', 'share_post', 'new_pigment']
 
 ARTICLE_URL = 'blog/{category}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{category}/{slug}/index.html'

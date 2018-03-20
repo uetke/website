@@ -91,8 +91,6 @@ def register():
     """Uses the new style of registration based on GitHub Pelican issue #314."""
     signals.initialized.connect(initialized)
     try:
-        # signals.content_object_init.connect(detect_content)
         signals.all_generators_finalized.connect(detect_image_header)
-        # signals.article_writer_finalized.connect(resize_photos)
     except Exception as e:
         print(e)

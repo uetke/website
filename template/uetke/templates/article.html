@@ -60,7 +60,7 @@ background-attachment: fixed;">
 {% endif %}
 <div class="container mt-2 mb-5">
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-9">
       <article>
         <div class="entry-content">
           {{ article.content }}
@@ -68,20 +68,73 @@ background-attachment: fixed;">
         <div class="author-information mb-3">
           The article <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></i> was written by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>.
         </div>
+        {% if article.share_post and article.status != 'draft' %}
+          <div class="social-sharing mb-3">
+            <h3>If you enjoyed reading, consider sharing:</h3>
+            <div class="row">
+              <div class="col-3"><a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter"><img src="{{ SITEURL }}/theme/img/twitter.svg" /></a></div>
+              <div class="col-3"><a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook"><img src="{{ SITEURL }}/theme/img/facebook.svg" /></a></div>
+              <div class="col-3"><a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus"><img src="{{ SITEURL }}/theme/img/google.svg" /></a></div>
+             </div>
+          </div>
+        {% endif %}
       </article>
       <div class="comment-section"><!-- Comments -->
       {% include 'disqus_script.html' %}
       </div>
     </div>
-    <div class="col-md-2 latest-articles d-none d-md-block">
-      <p class=""> Latest Articles</p>
-      <ul>
-      {% for art in articles[:10] %}
-        <li><a href="{{ SITEURL }}/{{ art.url }}">{{ art.title }}</a></li>
-      {% endfor %}
-      </ul>
+
+    <!-- SIDEBAR -->
+
+    <div class="col-md-3 side-bar d-none d-md-block">
+      <div class="row">
+        <div class="share-sidebar">
+        {% if article.share_post and article.status != 'draft' %}
+        <h3>Share:</h3>
+          <div class="col-3"><a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter"><img src="{{ SITEURL }}/theme/img/twitter.svg" /></a></div>
+          <div class="col-3"><a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook"><img src="{{ SITEURL }}/theme/img/facebook.svg" /></a></div>
+          <div class="col-3"><a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus"><img src="{{ SITEURL }}/theme/img/google.svg" /></a></div>
+        {% endif %}
+        </div>
+      </div>
+      <div class="latest-articles mt-3">
+        <p class=""> Latest Articles</p>
+        <ul data-spy="affix" data-offset-top="10">
+          {% for art in articles[:10] %}
+            <li><a href="{{ SITEURL }}/{{ art.url }}">{{ art.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
-
+<div class="container">
+  <h1>Other interesting articles for you</h1>
+  <div class="row">
+    {% if article.related_posts %}
+      {% for related_article in article.related_posts %}
+        <div class="col-md-4">
+          <article class="hentry">
+            <header>
+              {% if related_article.header %}
+                <a href="{{ SITEURL }}/{{ related_article.url }}" rel="bookmark"
+                       title="Permalink to {{ related_article.title|striptags }}"><img src="{{ SITEURL }}/{{ related_article.header_image_small }}" style="width:100%; border-radius: 10px;"></a>
+              {% else %}
+                <a href="{{ SITEURL }}/{{ related_article.url }}" rel="bookmark"
+                       title="Permalink to {{ related_article.title|striptags }}"><img src="{{ SITEURL }}/theme/img/general_header.jpg" style="width:100%"></a>
+              {% endif %}
+              <h1><a href="{{ SITEURL }}/{{ related_article.url }}" rel="bookmark"
+                           title="Permalink to {{ related_article.title|striptags }}">{{ related_article.title }}</a></h1>
+            </header>
+          <div class="entry-content mb-3">
+            {{ related_article.summary }}
+            <a class="readmore" href="{{ SITEURL }}/{{ related_article.url }}">read more</a>
+            {% include 'comments.html' %}
+          </div><!-- /.entry-content -->
+        </article>
+      </div>
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
 {% endblock %}

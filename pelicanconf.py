@@ -41,8 +41,8 @@ MINIFY = {
   'remove_optional_attribute_quotes': False
 }
 
-PLUGIN_PATHS = ["plugins"]
-PLUGINS = ['excercises_directive', 'images', 'header_image', 'sitemap']
+PLUGIN_PATHS = ['plugins', '../pelican-plugins']
+PLUGINS = ['excercises_directive', 'images', 'header_image', 'sitemap', 'related_posts', 'newsletter_directive', 'share_post']
 
 ARTICLE_URL = 'blog/{category}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{category}/{slug}/index.html'

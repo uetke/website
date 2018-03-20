@@ -15,7 +15,7 @@
                 <header>
                     {% if article.header %}
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                       title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/{{ article.header_image }}" style="width:100%; border-radius: 10px;"></a>
+                       title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/{{ article.header_image_small }}" style="width:100%; border-radius: 10px;"></a>
                     {% else %}
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                        title="Permalink to {{ article.title|striptags }}"><img src="{{ SITEURL }}/theme/img/general_header.jpg" style="width:100%"></a>

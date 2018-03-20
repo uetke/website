@@ -208,12 +208,24 @@ body{
  }
 
 .highlight{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    background-color: rgba(202,202,202,0.34);
+    margin-left: 0rem;
+    margin-right: 0rem;
     padding-left: 0.5rem;
     font-size: smaller;
 }
+
+@media screen and (min-width: 701px){
+    .highlight{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-left: 0.5rem;
+        font-size: smaller;
+}
+}
+
 
 .highlighttable .highlight{
     margin-left: 0px;
@@ -269,15 +281,23 @@ body{
 .latest-articles p{
     font-size: 0.95rem;
     color: #0b0b0b;
-    padding-bottom: 0rem;
     margin-bottom: 0.1rem;
     font-weight: bold;
+    border-bottom: 1px rgba(0, 0, 0, .125) solid;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.share-sidebar ul{
+    list-style: none;
 }
 
 .latest-articles ul{
     list-style: none;
     font-size: 0.95rem;
-    padding-left: 0px;
+    padding-left: 2px;
 }
 
 .latest-articles li{
@@ -288,7 +308,11 @@ body{
 }
 
 .latest-articles{
-    border-left: 1px rgba(0, 0, 0, 0.34) solid;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    border: 1px rgba(0, 0, 0, 0.34) solid;
+    border-radius: 5px;
 }
 
 blockquote {
@@ -303,4 +327,48 @@ blockquote {
 sup{
     vertical-align: super;
     font-size: small;
+}
+
+.inline-newsletter{
+    padding: 0px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 1px rgba(0, 0, 0, 0.34) solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #dee2e6;
+}
+
+.newsletter-title{
+    border-bottom: 1px rgba(0, 0, 0, .125) solid;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.newsletter-title p{
+    font-size: 1.72rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+newsletter-body{
+    padding: 3rem;
+    margin-left: 2rem;
+    font-size: 1.55rem;
+}
+
+newsletter-body p{
+    font-size: 1.2rem;
+}
+
+#mc-inline-subscribe{
+    background-color: #e85235;
+    font-size: 1.55rem;
+}
+
+.affix {
+  top: 20px;
+  width: 213px;
 }

@@ -13,7 +13,7 @@ from PIL import Image
 
 
 th_size = [350, 250]
-
+header_size = [1200, 800]
 logger = logging.getLogger(__name__)
 
 
@@ -51,7 +51,10 @@ def process_image(generator, content, image):
             output_image_path = os.path.join(output_path, image)
 
             if not os.path.isfile(output_image_path):
-                copyfile(path, output_image_path)
+                im = Image.open(path)
+                im.thumbnail((header_size[0], header_size[1]), Image.ANTIALIAS)
+                im.save(output_image_path)
+                # copyfile(path, output_image_path)
 
             # Resize thumbnail for lists of posts:
             th_name = ''.join(image.split('.')[:-1]) + '_r.jpg'

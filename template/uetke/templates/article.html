@@ -79,9 +79,10 @@ background-attachment: fixed;">
           </div>
         {% endif %}
       </article>
-      <div class="comment-section"><!-- Comments -->
-      {% include 'disqus_script.html' %}
-      </div>
+      {% include 'related_articles.html' %}
+      <!--<div class="comment-section"><!-- Comments -->
+
+      <!--</div>-->
     </div>
 
     <!-- SIDEBAR -->
@@ -106,35 +107,6 @@ background-attachment: fixed;">
         </ul>
       </div>
     </div>
-  </div>
-</div>
-<div class="container">
-  <h1>Other interesting articles for you</h1>
-  <div class="row">
-    {% if article.related_posts %}
-      {% for related_article in article.related_posts %}
-        <div class="col-md-4">
-          <article class="hentry">
-            <header>
-              {% if related_article.header %}
-                <a href="{{ SITEURL }}/{{ related_article.url }}" rel="bookmark"
-                       title="Permalink to {{ related_article.title|striptags }}"><img src="{{ SITEURL }}/{{ related_article.header_image_small }}" style="width:100%; border-radius: 10px;"></a>
-              {% else %}
-                <a href="{{ SITEURL }}/{{ related_article.url }}" rel="bookmark"
-                       title="Permalink to {{ related_article.title|striptags }}"><img src="{{ SITEURL }}/theme/img/general_header.jpg" style="width:100%"></a>
-              {% endif %}
-              <h1><a href="{{ SITEURL }}/{{ related_article.url }}" rel="bookmark"
-                           title="Permalink to {{ related_article.title|striptags }}">{{ related_article.title }}</a></h1>
-            </header>
-          <div class="entry-content mb-3">
-            {{ related_article.summary }}
-            <a class="readmore" href="{{ SITEURL }}/{{ related_article.url }}">read more</a>
-            {% include 'comments.html' %}
-          </div><!-- /.entry-content -->
-        </article>
-      </div>
-    {% endfor %}
-  {% endif %}
   </div>
 </div>
 {% endblock %}

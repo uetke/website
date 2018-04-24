@@ -1,0 +1,21 @@
+<div id="new_comment"></div>
+<div id="comments"></div>
+<script>
+    var this_page_id = '{{ SITEURL }}/{{ article.url }}';
+    $(document).ready(function() {
+        $.ajax({
+            type: "POST",
+            url: "http://aquic.pythonanywhere.com/view_comments",
+            data: JSON.stringify({
+                id: this_page_id,
+            }),
+            contentType: "application/json",
+            success: function (data) {
+                $('#comments').html(data);
+            },
+        });
+        $('#new_comment').load("http://aquic.pythonanywhere.com/new_comment");
+        return false;
+    });
+
+</script>

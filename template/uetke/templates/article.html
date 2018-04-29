@@ -80,9 +80,10 @@ background-attachment: fixed;">
         {% endif %}
       </article>
       <div class="comments my-3">
-        <form method="post" action="https://api.staticman.net/v2/entry/uetke/website_content/master/">
-          <input name="options[redirect]" type="hidden" value="{{ SITEURL }}/{{ article.slug }}">
-          <input name="fields[url]" type="hidden" value="{{ article.slug }}">
+        <form method="post" action="https://api.staticman.net/v2/entry/uetke/website_content/master/comments">
+          <input name="options[redirect]" type="hidden" value="{{ SITEURL }}/{{ article.url }}">
+          <input name="options[slug]" type="hidden" value="{{ article.slug }}">
+          <input name="fields[url]" type="hidden" value="{{ article.url }}">
             <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label">Name:</label>
               <div class="col-sm-10">

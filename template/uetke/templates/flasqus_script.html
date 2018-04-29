@@ -5,7 +5,7 @@
     $(document).ready(function() {
         $.ajax({
             type: "POST",
-            url: "http://aquic.pythonanywhere.com/view_comments",
+            url: "https://aquic.pythonanywhere.com/view_comments",
             data: JSON.stringify({
                 id: this_page_id,
             }),
@@ -14,7 +14,7 @@
                 $('#comments').html(data);
             },
         });
-        $('#new_comment').load("http://aquic.pythonanywhere.com/new_comment");
+        $('#new_comment').load("https://aquic.pythonanywhere.com/new_comment");
         return false;
     });
 

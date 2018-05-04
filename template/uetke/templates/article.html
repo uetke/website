@@ -80,20 +80,21 @@ background-attachment: fixed;">
         {% endif %}
       </article>
       <div class="comments my-3">
-        <form method="post" action="https://api.staticman.net/v2/entry/uetke/website_content/master/comments">
-          <input name="options[redirect]" type="hidden" value="{{ SITEURL }}/{{ article.url }}">
-          <input name="options[slug]" type="hidden" value="{{ article.slug }}">
-          <input name="fields[url]" type="hidden" value="{{ article.url }}">
-            <div class="form-group row">
+        <h3 id="comments">COMMENTS</h3>
+        <div id="current-comments"></div>
+      <div class="comment">
+        <form method="post" action="https://api.staticman.net/v2/entry/uetke/website_comments/master/comments" id="comment-form">
+          <input name="fields[url]" type="hidden" value="{{ article.url }}" />
+            <div class="form-group required row">
                 <label for="name" class="col-sm-2 col-form-label">Name:</label>
               <div class="col-sm-10">
-                <input class="form-control" name="fields[name]" type="text" id="name">
+                <input class="form-control" required="required" name="fields[name]" type="text" id="name">
               </div>
             </div>
             <div class="form-group row">
               <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
               <div class="col-sm-10">
-                <input name="fields[email]" class="form-control" id="email" type="email">
+                <input name="fields[email]" required="required" class="form-control" id="email" type="email" >
               </div>
             </div>
             <div class="form-group row">
@@ -105,12 +106,13 @@ background-attachment: fixed;">
             <div class="form-group row">
               <label class="col-sm-2 col-form-label" for="message">Message:</label>
               <div class="col-sm-10">
-                <textarea name="fields[message]" class="form-control" id="message"></textarea>
+                <textarea name="fields[message]" required="required" class="form-control" id="message"></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="submit" class="btn btn-secondary mb-2" id="submit">Submit</button>
         </form>
       </div>
+    </div>
       {% include 'related_articles.html' %}
     </div>
 
@@ -138,4 +140,24 @@ background-attachment: fixed;">
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block footer_scripts %}
+<script src="{{ SITEURL }}/theme/js/comment_submit.js"></script>
+<script>
+$(document).ready(function () {
+   $.ajax({
+       type: 'GET',
+       url: '{{ SITEURL }}/comments/{{ article.url }}comments.html',
+       crossDomain: true,
+       success: function(data){
+           $('#current-comments').html(data);
+       },
+       error: function(){
+           $('#current-comments').html('<h3 class="mb-3">No comments yet, be the first!</h3>');
+       }
+   });
+});
+{% endblock %}
+{% block custom_header_links %}
 {% endblock %}

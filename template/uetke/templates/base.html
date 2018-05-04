@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57311806-7"></script>
@@ -37,13 +36,13 @@
   <!-- FEEDS -->
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for Uetke.com" href="/feed.rss" />
   <link rel="alternate" type="application/atom+xml" title="Atom Feed for Uetke.com" href="/atom.xml" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>
+{#  <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>#}
   <!-- Script: Animated entrance -->
-  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>
+{#  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>#}
   <!-- Font Awesome Javascript -->
-  <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>
+{#  <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>#}
   <!-- Cookie Consent -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
@@ -66,7 +65,7 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+{% block custom_header_links %}{% endblock %}
 </head>
 
 <body>
@@ -129,11 +128,13 @@ window.cookieconsent.initialise({
     </div>
   </div>
 
-  <!-- JavaScript dependencies -->
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
-
+{% block footer_scripts %}{% endblock %}
 </body>
 
 </html>

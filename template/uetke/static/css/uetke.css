@@ -387,3 +387,8 @@ newsletter-body p{
   top: 20px;
   width: 213px;
 }
+
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}

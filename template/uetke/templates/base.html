@@ -38,7 +38,7 @@
   <link rel="alternate" type="application/atom+xml" title="Atom Feed for Uetke.com" href="/atom.xml" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-{#  <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>#}
+  <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>
   <!-- Script: Animated entrance -->
 {#  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>#}
   <!-- Font Awesome Javascript -->
@@ -64,6 +64,12 @@ window.cookieconsent.initialise({
     "href": "https://www.uetke.com/privacy/"
   }
 })});
+</script>
+<script
+    id="fsc-api"
+    src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.5/fastspring-builder.min.js"
+    type="text/javascript"
+    data-storefront="pythonforthelab.onfastspring.com/popup-pftl-book">
 </script>
 {% block custom_header_links %}{% endblock %}
 </head>

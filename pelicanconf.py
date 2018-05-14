@@ -34,7 +34,8 @@ TEMPLATE_PAGES = {'static_pages/courses.html': 'courses/index.html',
                   'static_pages/main.html': 'index.html',
                   'static_pages/scientific_software.html': 'scientific-software/index.html',
                   'static_pages/data_analysis.html': 'data-analysis/index.html',
-                  'static_pages/experiment-design.html': 'experiment-design/index.html',}
+                  'static_pages/experiment-design.html': 'experiment-design/index.html',
+                  'static_pages/cookie.html': 'cookie-policy/index.html'}
 
 MINIFY = {
   'remove_comments': True,

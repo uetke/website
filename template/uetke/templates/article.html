@@ -140,6 +140,9 @@ background-attachment: fixed;">
           </div>
       </div>
       <div class="row">
+          {% include 'newsletter_card.html' %}
+      </div>
+      <div class="row">
         <div class="share-sidebar">
         {% if article.share_post and article.status != 'draft' %}
         <h3>Share:</h3>

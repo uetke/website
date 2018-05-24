@@ -1,143 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57311806-7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57311806-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-57311806-7');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- PAGE settings -->
-  <link rel="icon" href="{{ SITEURL }}/theme/img/Logo_Only_U.jpg">
-  <title>{{ SITENAME }} | {% block title %}{% endblock %}</title>
-  <meta name="description" content="{% block description %}Uetke specializes in developing software for scientific research. We also offer trainings and coaching{% endblock %}">
-  <meta name="keywords" content="Python, Software, Science, Research, User Interface, GUI, {% block keywords %}{% endblock %}">
-  <!-- Open Graph Descriptions -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock %}"/>
-  <meta property="og:title" content="{% block og_title %}Software For Science{% endblock %}" />
-  <meta property="og:description" content="{% block og_description %}Uetke specializes in developing software for scientific research. We also offer trainings and coaching{% endblock %}" />
-  {% block meta_content %}{% endblock %}
-  <!-- Twitter Meta Descriptions -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@uetke" />
-  <meta name="twitter:creator" content="@_aquic_">
-  <!-- CSS dependencies -->
-  <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/fontawesome.min.css" type="text/css">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/uetke.css">
-  <!-- FEEDS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed for Uetke.com" href="/feed.rss" />
-  <link rel="alternate" type="application/atom+xml" title="Atom Feed for Uetke.com" href="/atom.xml" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>
-  <!-- Script: Animated entrance -->
-{#  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>#}
-  <!-- Font Awesome Javascript -->
-{#  <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>#}
-  <!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#237afc"
-    },
-    "button": {
-      "background": "#fff",
-      "text": "#237afc"
-    }
-  },
-  "content": {
-    "href": "https://www.uetke.com/cookie-policy/"
-  }
-})});
-</script>
-<script
-    id="fsc-api"
-    src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.5/fastspring-builder.min.js"
-    type="text/javascript"
-    data-storefront="pythonforthelab.onfastspring.com/popup-pftl-book">
-</script>
-{% block custom_header_links %}{% endblock %}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-57311806-7');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PAGE settings -->
+    <link rel="icon" href="{{ SITEURL }}/theme/img/Logo_Only_U.jpg">
+    <title>{{ SITENAME }} | {% block title %}{% endblock %}</title>
+    <meta name="description"
+          content="{% block description %}Uetke specializes in developing software for scientific research. We also offer trainings and coaching{% endblock %}">
+    <meta name="keywords"
+          content="Python, Software, Science, Research, User Interface, GUI, {% block keywords %}{% endblock %}">
+    <!-- Open Graph Descriptions -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock %}"/>
+    <meta property="og:title" content="{% block og_title %}Software For Science{% endblock %}"/>
+    <meta property="og:description"
+          content="{% block og_description %}Uetke specializes in developing software for scientific research. We also offer trainings and coaching{% endblock %}"/>
+    {% block meta_content %}{% endblock %}
+    <!-- Twitter Meta Descriptions -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@uetke"/>
+    <meta name="twitter:creator" content="@_aquic_">
+    <!-- CSS dependencies -->
+    <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/fontawesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/uetke.css">
+    <!-- FEEDS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Uetke.com" href="/feed.rss"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed for Uetke.com" href="/atom.xml"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+    <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>
+    <!-- Script: Animated entrance -->
+    {#  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>#}
+    <!-- Font Awesome Javascript -->
+    {#  <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>#}
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#237afc"
+                    },
+                    "button": {
+                        "background": "#fff",
+                        "text": "#237afc"
+                    }
+                },
+                "content": {
+                    "href": "https://www.uetke.com/cookie-policy/"
+                }
+            })
+        });
+    </script>
+    <script
+            id="fsc-api"
+            src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.5/fastspring-builder.min.js"
+            type="text/javascript"
+            data-storefront="pythonforthelab.onfastspring.com/popup-pftl-book">
+    </script>
+    {% block custom_header_links %}{% endblock %}
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-ontop bg-light">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-ontop bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="{{ SITEURL }}/theme/img/Uetke_Logo.png" width="" height="" class="d-inline-block align-top" alt=""> </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse text-right justify-content-end" id="navbar2SupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item mx-1">
-            <a class="btn btn-light" href="{{ SITEURL }}/courses">Courses</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="btn btn-light" href="{{ SITEURL }}/blog">Blog</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="btn btn-light" href="{{ SITEURL }}/about-us">About Us</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="btn btn-light" href="{{ SITEURL }}/contact">Contact</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a href="/feed.rss"><img src="{{ SITEURL }}/theme/img/rss.svg" style="height: 38px"></a>
-          </li>
-          <li class="nav-item mx-1">
-            <a href="https://github.com/uetke"><img src="{{ SITEURL }}/theme/img/github.svg" style="height: 38px"></a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="/">
+            <img src="{{ SITEURL }}/theme/img/Uetke_Logo.png" width="" height="" class="d-inline-block align-top"
+                 alt=""> </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse text-right justify-content-end" id="navbar2SupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-1">
+                    <a class="btn btn-light" href="{{ SITEURL }}/courses">Courses</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="btn btn-light" href="{{ SITEURL }}/blog">Blog</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="btn btn-light" href="{{ SITEURL }}/about-us">About Us</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="btn btn-light" href="{{ SITEURL }}/contact">Contact</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="/feed.rss"><img src="{{ SITEURL }}/theme/img/rss.svg" style="height: 38px"></a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="https://github.com/uetke"><img src="{{ SITEURL }}/theme/img/github.svg"
+                                                            style="height: 38px"></a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  {% block content %}{% endblock %}
-  <!-- Footer -->
-  <div class="py-5 bg-dark">
+</nav>
+{% block content %}{% endblock %}
+<!-- Footer -->
+<div class="container my-4">
+    <div class="row">
+        <div class="col-10">
+            {% include 'newsletter_card.html' %}
+        </div>
+    </div>
+</div>
+<div class="py-5 bg-dark">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="lead">Sign up to our newsletter for the latest news</p>
-          <form action="https://uetke.us17.list-manage.com/subscribe/post?u=57a7ac8cbc79b7548db42490e&amp;id=6fde4af646" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
-            <div class="form-group mc-field-group">
-	          <input type="email" placeholder="Enter your Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <div class="row">
+            <div class="col-md-12 my-3 text-center">
+                <p class="text-muted">© Copyright 2018 Uetke | <a href="{{ SITEURL }}/contact">Contact Us</a> | <a
+                        href="{{ SITEURL }}/feed.rss">RSS feed</a> | <a href="{{ SITEURL }}/privacy">Privacy Policy</a> | <a
+                        href="{{ SITEURL }}/cookie-policy">Cookies</a></p>
             </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_57a7ac8cbc79b7548db42490e_6fde4af646" tabindex="-1" value=""></div>
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"  class="btn ml-2 btn-secondary">&nbsp;</button>
-          </form>
-          <p class="">Keep up to date with the news. No spam, promise.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 my-3 text-center">
-          <p class="text-muted">© Copyright 2018 Uetke | <a href="{{ SITEURL }}/contact">Contact Us</a> | <a href="{{ SITEURL }}/feed.rss">RSS feed</a> | <a href="{{ SITEURL }}/privacy">Privacy Policy</a> | <a href="{{ SITEURL }}/cookie-policy">Cookies</a></p>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-      <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/newsletter_subscribe.js"></script>
 {% block footer_scripts %}{% endblock %}
 </body>
 

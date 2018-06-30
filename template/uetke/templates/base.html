@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57311806-7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-57311806-7');
-    </script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- PAGE settings -->
@@ -46,32 +32,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Script: Make my navbar transparent when the document is scrolled to top -->
     <script src="{{ SITEURL }}/theme/js/navbar-ontop.js" defer></script>
-    <!-- Script: Animated entrance -->
-    {#  <script src="{{ SITEURL }}/theme/js/animate-in.js" defer></script>#}
     <!-- Font Awesome Javascript -->
     <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" type="text/css"
-          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": {
-                        "background": "#237afc"
-                    },
-                    "button": {
-                        "background": "#fff",
-                        "text": "#237afc"
-                    }
-                },
-                "content": {
-                    "href": "https://www.uetke.com/cookie-policy/"
-                }
-            })
-        });
-    </script>
     <script
             id="fsc-api"
             src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.5/fastspring-builder.min.js"
@@ -98,6 +60,9 @@
                 </li>
                 <li class="nav-item mx-1">
                     <a class="btn btn-light" href="{{ SITEURL }}/blog">Blog</a>
+                </li>
+                <li class="nav-item mx01">
+                    <a class="btn btn-light" href="https://www.pythonforthelab.com">Python for the Lab</a>
                 </li>
                 <li class="nav-item mx-1">
                     <a class="btn btn-light" href="{{ SITEURL }}/about-us">About Us</a>

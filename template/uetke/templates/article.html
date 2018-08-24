@@ -31,6 +31,13 @@
 {% endblock %}
 {% endif %}
 
+{% block canonical_link %}
+    {% if article.canonical %}
+        <link rel="canonical" href="{{ article.canonical }}" />
+    {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}" />
+    {% endif %}
+{% endblock %}
 {% block content %}
 {% if article.header %}
 <div class="pt-5 big-header" style="background-image: url('{{ SITEURL }}/{{ article.header_image }}');
@@ -135,12 +142,12 @@ background-attachment: fixed;">
                   Support us
               </div>
               <div class="card-body">
-                  If you like the content of this website, consider buying a copy of the book <a href="https://pythonforthelab.onfastspring.com/python-for-the-lab-book">Python For The Lab</a>
+                  If you like the content of this website, consider buying a copy of the book <a href="https://www.pythonforthelab.com/books/">Python For The Lab</a>
               </div>
           </div>
       </div>
       <div class="row">
-          {% include 'newsletter_card.html' %}
+          {% include 'newsletter_sidebar.html' %}
       </div>
       <div class="row">
         <div class="share-sidebar">

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- PAGE settings -->
     <link rel="icon" href="{{ SITEURL }}/theme/img/Logo_Only_U.jpg">
+    {% block canonical_link %}{% endblock %}
     <title>{{ SITENAME }} | {% block title %}{% endblock %}</title>
     <meta name="description"
           content="{% block description %}Uetke specializes in developing software for scientific research. We also offer trainings and coaching{% endblock %}">
     <meta name="keywords"
           content="Python, Software, Science, Research, User Interface, GUI, {% block keywords %}{% endblock %}">
+
+    <!-- Google Verification Tag -->
+    <meta name="google-site-verification" content="GJ7tmHztJfvG1p3A2JaaKizXrq2LzH4beZr9W8brfL0" />
     <!-- Open Graph Descriptions -->
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock %}"/>
@@ -35,6 +39,7 @@
     <!-- Font Awesome Javascript -->
     <script src="{{ SITEURL }}/theme/js/fontawesome-all.min.js" defer></script>
     {% block custom_header_links %}{% endblock %}
+
     <!-- Start of Async Drift Code -->
     <script>
         "use strict";

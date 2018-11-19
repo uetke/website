@@ -173,22 +173,22 @@ background-attachment: fixed;">
 {% endblock %}
 
 {% block footer_scripts %}
-<script src="{{ SITEURL }}/theme/js/comment_submit.js"></script>
-<script>
-$(document).ready(function () {
-   $.ajax({
-       type: 'GET',
-       url: '{{ SITEURL }}/comments/{{ article.url }}comments.html',
-       crossDomain: true,
-       success: function(data){
-           $('#current-comments').html(data);
-       },
-       error: function(){
-           $('#current-comments').html('<h3 class="mb-3">No comments yet, be the first!</h3>');
-       }
-   });
-});
-</script>
+{#<script src="{{ SITEURL }}/theme/js/comment_submit.js"></script>#}
+{#<script>#}
+{#$(document).ready(function () {#}
+{#   $.ajax({#}
+{#       type: 'GET',#}
+{#       url: '{{ SITEURL }}/comments/{{ article.url }}comments.html',#}
+{#       crossDomain: true,#}
+{#       success: function(data){#}
+{#           $('#current-comments').html(data);#}
+{#       },#}
+{#       error: function(){#}
+{#           $('#current-comments').html('<h3 class="mb-3">No comments yet, be the first!</h3>');#}
+{#       }#}
+{#   });#}
+{#});#}
+{#</script>#}
 {% endblock %}
 {% block custom_header_links %}
 {% endblock %}
